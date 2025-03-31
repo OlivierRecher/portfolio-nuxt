@@ -1,1 +1,12 @@
 @import "tailwindcss";
+@import "@nuxt/ui";
+
+.ticker__list {
+  animation: ticker 12s infinite linear;
+}
+
+@keyframes ticker {
+  100% {
+    transform: translateX(-100%);
+  }
+}

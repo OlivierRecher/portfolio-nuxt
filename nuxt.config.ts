@@ -9,12 +9,18 @@ export default defineNuxtConfig({
     '@nuxt/icon',
     '@nuxt/eslint',
     '@nuxt/image',
-    '@nuxt/ui'
+    '@nuxt/ui',
+    '@nuxtjs/color-mode',
   ],
   vite: {
     plugins: [
       tailwindcss(),
     ],
+  },
+  colorMode: {
+    classSuffix: '',
+    preference: 'light',
+    fallback: 'light'
   },
   nitro: {
     preset: "vercel"
