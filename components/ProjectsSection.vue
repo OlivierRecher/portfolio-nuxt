@@ -18,7 +18,7 @@
           <UButton
             v-for="category in categories"
             :key="category.value"
-            color="''"
+              :color="selectedCategory === category.value ? 'primary' : 'neutral'"
             :variant="selectedCategory === category.value ? 'solid' : 'outline'"
             @click="selectedCategory = category.value"
             :class="selectedCategory === category.value ? 'px-6 py-2 gradient-button' : 'px-6 py-2'"
@@ -115,16 +115,7 @@
               </div>
 
               <!-- Project Actions -->
-              <div class="flex justify-between items-center">
-                <UButton
-                  color="neutral"
-                  variant="ghost"
-                  size="sm"
-                  @click="selectedProject = project"
-                >
-                  <UIcon name="i-heroicons-eye" class="w-4 h-4 mr-2" />
-                  Détails
-                </UButton>
+              <div class="flex justify-end items-center">
                 <div class="flex space-x-2">
                   <UButton
                     v-if="project.githubUrl"
@@ -154,71 +145,6 @@
           </div>
         </div>
 
-        <!--TODO: rework Project Detail Modal -->
-        <UModal v-model="isModalOpen">
-          <UCard v-if="selectedProject">
-            <template #header>
-              <div class="flex items-center justify-between">
-                <h3 class="text-2xl font-bold">{{ selectedProject.title }}</h3>
-                <div class="flex space-x-2">
-                  <UButton
-                    v-if="selectedProject.githubUrl"
-                    :to="selectedProject.githubUrl"
-                    target="_blank"
-                    color="neutral"
-                    variant="outline"
-                    size="sm"
-                  >
-                    <UIcon name="i-simple-icons-github" class="w-4 h-4 mr-2" />
-                    Code
-                  </UButton>
-                  <UButton
-                    v-if="selectedProject.liveUrl"
-                    :to="selectedProject.liveUrl"
-                    target="_blank"
-                    color="primary"
-                    variant="solid"
-                    size="sm"
-                  >
-                    <UIcon name="i-heroicons-arrow-top-right-on-square" class="w-4 h-4 mr-2" />
-                    Demo
-                  </UButton>
-                </div>
-              </div>
-            </template>
-
-            <div class="space-y-6">
-              <img
-                :src="selectedProject.image"
-                :alt="selectedProject.title"
-                class="w-full h-48 object-cover rounded-lg"
-              />
-              
-              <div>
-                <h4 class="font-semibold mb-2">Description :</h4>
-                <p class="text-gray-600 dark:text-gray-300">{{ selectedProject.longDescription }}</p>
-              </div>
-
-              <div>
-                <h4 class="font-semibold mb-2">Technologies utilisées :</h4>
-                <div class="flex flex-wrap gap-2">
-                  <span
-                    v-for="tech in selectedProject.technologies"
-                    :key="tech"
-                    class="px-3 py-1 bg-blue-100 dark:bg-blue-900/30 text-blue-700 dark:text-blue-300 rounded-full text-sm"
-                  >
-                    {{ tech }}
-                  </span>
-                </div>
-              </div>
-
-              <div class="flex justify-between text-sm text-gray-500 dark:text-gray-400">
-                <span>Année : {{ selectedProject.year }}</span>
-                <span>Catégorie : {{ getCategoryLabel(selectedProject.category) }}</span>
-              </div>
-            </div>
-          </UCard>
-        </UModal>
       </div>
     </div>
   </section>
@@ -227,14 +153,10 @@
 <script setup lang="ts">
 import { computed, ref } from 'vue'
 import { usePortfolioData } from '~/composables/usePortfolioData'
-import type { Project } from '~/types'
 
 const { projects } = usePortfolioData()
 
-const selectedProject = ref<Project | null>(null)
 const selectedCategory = ref('all')
-
-const isModalOpen = computed(() => !!selectedProject.value)
 
 const categories = [
   { label: 'Tous', value: 'all' },

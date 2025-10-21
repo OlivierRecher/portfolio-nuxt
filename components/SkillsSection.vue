@@ -25,8 +25,7 @@
               <div
                 v-for="skill in frontendSkills"
                 :key="skill.name"
-                class="group relative bg-white dark:bg-gray-700 rounded-xl p-6 shadow-lg hover:shadow-xl transition-all duration-300 hover:-translate-y-1 cursor-pointer"
-                @click="selectedSkill = skill"
+                class="group relative bg-white dark:bg-gray-700 rounded-xl p-6 shadow-lg hover:shadow-xl transition-all duration-300 hover:-translate-y-1"
               >
                 <div class="text-center">
                   <div class="w-12 h-12 mx-auto mb-3 flex items-center justify-center">
@@ -61,8 +60,7 @@
               <div
                 v-for="skill in backendSkills"
                 :key="skill.name"
-                class="group relative bg-white dark:bg-gray-700 rounded-xl p-6 shadow-lg hover:shadow-xl transition-all duration-300 hover:-translate-y-1 cursor-pointer"
-                @click="selectedSkill = skill"
+                class="group relative bg-white dark:bg-gray-700 rounded-xl p-6 shadow-lg hover:shadow-xl transition-all duration-300 hover:-translate-y-1"
               >
                 <div class="text-center">
                   <div class="w-12 h-12 mx-auto mb-3 flex items-center justify-center">
@@ -97,8 +95,7 @@
               <div
                 v-for="skill in toolsSkills"
                 :key="skill.name"
-                class="group relative bg-white dark:bg-gray-700 rounded-xl p-6 shadow-lg hover:shadow-xl transition-all duration-300 hover:-translate-y-1 cursor-pointer"
-                @click="selectedSkill = skill"
+                class="group relative bg-white dark:bg-gray-700 rounded-xl p-6 shadow-lg hover:shadow-xl transition-all duration-300 hover:-translate-y-1"
               >
                 <div class="text-center">
                   <div class="w-12 h-12 mx-auto mb-3 flex items-center justify-center">
@@ -124,53 +121,17 @@
           </div>
         </div>
 
-        <!-- TODO: rework Skill Detail Modal -->
-        <UModal v-model="isModalOpen">
-          <UCard v-if="selectedSkill">
-            <template #header>
-              <div class="flex items-center space-x-3">
-                <UIcon :name="selectedSkill.icon" class="w-8 h-8" />
-                <h3 class="text-xl font-semibold">{{ selectedSkill.name }}</h3>
-              </div>
-            </template>
-
-            <div class="space-y-4">
-              <div>
-                <h4 class="font-semibold mb-2">Niveau :</h4>
-                <div class="flex items-center space-x-2">
-                  <span class="text-sm font-medium">{{ getLevelLabel(selectedSkill.level) }}</span>
-                  <div class="flex space-x-1">
-                    <div
-                      v-for="i in 4"
-                      :key="i"
-                      class="w-3 h-3 rounded-full"
-                      :class="i <= getLevelNumber(selectedSkill.level) ? 'bg-blue-500' : 'bg-gray-300'"
-                    ></div>
-                  </div>
-                </div>
-              </div>
-              
-              <div v-if="selectedSkill.description">
-                <h4 class="font-semibold mb-2">Description :</h4>
-                <p class="text-gray-600 dark:text-gray-300">{{ selectedSkill.description }}</p>
-              </div>
-            </div>
-          </UCard>
-        </UModal>
       </div>
     </div>
   </section>
 </template>
 
 <script setup lang="ts">
-import { computed, ref } from 'vue'
+import { computed } from 'vue'
 import { usePortfolioData } from '~/composables/usePortfolioData'
-import type { Skill } from '~/types'
 
 const { skills } = usePortfolioData()
 
-const selectedSkill = ref<Skill | null>(null)
-const isModalOpen = computed(() => !!selectedSkill.value)
 
 const frontendSkills = computed(() => 
   skills.filter(skill => skill.category === 'frontend')
