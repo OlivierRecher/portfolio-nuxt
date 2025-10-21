@@ -18,10 +18,10 @@
           <UButton
             v-for="category in categories"
             :key="category.value"
-            :color="selectedCategory === category.value ? 'primary' : ''"
+            color="''"
             :variant="selectedCategory === category.value ? 'solid' : 'outline'"
             @click="selectedCategory = category.value"
-            class="px-6 py-2"
+            :class="selectedCategory === category.value ? 'px-6 py-2 gradient-button' : 'px-6 py-2'"
           >
             {{ category.label }}
           </UButton>
@@ -64,7 +64,7 @@
                     v-if="project.githubUrl"
                     :to="project.githubUrl"
                     target="_blank"
-                    color="white"
+                    color="neutral"
                     variant="solid"
                     size="lg"
                     class="px-6"
@@ -117,7 +117,7 @@
               <!-- Project Actions -->
               <div class="flex justify-between items-center">
                 <UButton
-                  color="gray"
+                  color="neutral"
                   variant="ghost"
                   size="sm"
                   @click="selectedProject = project"
@@ -130,7 +130,7 @@
                     v-if="project.githubUrl"
                     :to="project.githubUrl"
                     target="_blank"
-                    color="gray"
+                    color="neutral"
                     variant="ghost"
                     size="sm"
                     :aria-label="`Voir le code de ${project.title}`"
@@ -141,7 +141,7 @@
                     v-if="project.liveUrl"
                     :to="project.liveUrl"
                     target="_blank"
-                    color="gray"
+                    color="neutral"
                     variant="ghost"
                     size="sm"
                     :aria-label="`Voir la démo de ${project.title}`"
@@ -165,7 +165,7 @@
                     v-if="selectedProject.githubUrl"
                     :to="selectedProject.githubUrl"
                     target="_blank"
-                    color="gray"
+                    color="neutral"
                     variant="outline"
                     size="sm"
                   >

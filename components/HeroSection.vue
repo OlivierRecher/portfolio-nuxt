@@ -297,27 +297,6 @@ const { personalInfo } = usePortfolioData()
   }
 }
 
-/* Gradient button styles */
-.gradient-button {
-  background: linear-gradient(135deg, #60a5fa 0%, #a855f7 50%, #ec4899 100%);
-  border: none;
-  color: white;
-}
-
-.gradient-button:hover {
-  background: linear-gradient(135deg, #3b82f6 0%, #8b5cf6 50%, #db2777 100%);
-  transform: scale(1.05);
-}
-
-/* Light mode gradient button */
-.light .gradient-button {
-  background: linear-gradient(135deg, #3b82f6 0%, #8b5cf6 50%, #ec4899 100%);
-}
-
-.light .gradient-button:hover {
-  background: linear-gradient(135deg, #2563eb 0%, #7c3aed 50%, #db2777 100%);
-}
-
 /* Light mode scroll indicator */
 .light #hero .text-white\/60 {
   color: rgba(0, 0, 0, 0.6);

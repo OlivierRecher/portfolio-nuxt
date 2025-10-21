@@ -85,7 +85,7 @@
                 size="lg"
                 :to="personalInfo.resumeUrl"
                 target="_blank"
-                class="px-6 py-3"
+                class="px-6 py-3 gradient-button"
               >
                 <UIcon name="i-heroicons-document-arrow-down" class="w-5 h-5 mr-2" />
                 Télécharger CV
@@ -144,3 +144,4 @@ import { scrollToSection } from '~/utils/scroll'
 
 const { personalInfo } = usePortfolioData()
 </script>
+

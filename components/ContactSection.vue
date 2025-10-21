@@ -134,7 +134,7 @@
                 color="primary"
                 size="lg"
                 :loading="isSubmitting"
-                class="w-full"
+                class="w-full gradient-button"
               >
                 <UIcon name="i-heroicons-paper-airplane" class="w-5 h-5 mr-2" />
                 {{ isSubmitting ? 'Envoi en cours...' : 'Envoyer le message' }}
@@ -231,3 +231,4 @@ const onSubmit = async (event: any) => {
   }
 }
 </script>
+
