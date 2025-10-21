@@ -1,3 +1,10 @@
+<script setup lang="ts">
+import { usePortfolioData } from '~/composables/usePortfolioData'
+import { scrollToSection } from '~/utils/scroll'
+
+const { personalInfo } = usePortfolioData()
+</script>
+
 <template>
   <section id="hero" class="relative min-h-screen flex items-center justify-center overflow-hidden">
     <!-- Animated Background -->
@@ -92,13 +99,6 @@
     </div>
   </section>
 </template>
-
-<script setup lang="ts">
-import { usePortfolioData } from '~/composables/usePortfolioData'
-import { scrollToSection } from '~/utils/scroll'
-
-const { personalInfo } = usePortfolioData()
-</script>
 
 <style scoped>
 #hero {

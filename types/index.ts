@@ -1,4 +1,3 @@
-// Types pour le portfolio
 export interface Project {
   id: string
   title: string
@@ -67,18 +66,4 @@ export interface PersonalInfo {
   avatar: string
   resumeUrl?: string
   socialLinks: SocialLink[]
-}
-
-export interface AnimationConfig {
-  duration: number
-  delay: number
-  easing: string
-}
-
-export interface ThreeJSConfig {
-  enableParticles: boolean
-  enableGeometry: boolean
-  enableLighting: boolean
-  particleCount: number
-  animationSpeed: number
 }

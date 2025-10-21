@@ -9,7 +9,7 @@ export const usePortfolioData = () => {
     location: 'France',
     email: 'recher.olivier@outlook.fr',
     avatar: '/images/avatar.jpeg',
-    resumeUrl: '/resume.pdf',
+    resumeUrl: '/CV_Olivier_Recher.pdf',
     socialLinks: [
       { name: 'GitHub', url: 'https://github.com/olivierrecher', icon: 'i-simple-icons-github' },
       { name: 'LinkedIn', url: 'https://linkedin.com/in/olivierrecher', icon: 'i-simple-icons-linkedin' },

@@ -88,7 +88,8 @@
                 class="px-6 py-3 gradient-button"
               >
                 <UIcon name="i-heroicons-document-arrow-down" class="w-5 h-5 mr-2" />
-                Télécharger CV
+                {{ $t('about.cta.resume') }}
+                
               </UButton>
               <UButton
                 color="neutral"
@@ -98,7 +99,7 @@
                 class="px-6 py-3"
               >
                 <UIcon name="i-heroicons-envelope" class="w-5 h-5 mr-2" />
-                Me contacter
+                {{ $t('about.cta.contact') }}
               </UButton>
             </div>
           </div>
