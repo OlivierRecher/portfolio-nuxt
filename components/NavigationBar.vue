@@ -7,8 +7,17 @@
       <div class="flex items-center justify-between h-16">
         <!-- Logo -->
         <div class="flex items-center space-x-2">
-          <div class="w-8 h-8 bg-gradient-to-br from-blue-500 to-purple-500 rounded-lg flex items-center justify-center">
-            <UIcon name="i-heroicons-code-bracket" class="w-5 h-5 text-white" />
+          <div class="size-16 flex items-center justify-center">
+            <img 
+              src="/images/logo_light.png" 
+              alt="Logo" 
+              class="size-16 dark:hidden"
+            />
+            <img 
+              src="/images/logo_dark.png"
+              alt="Logo" 
+              class="size-16 hidden dark:block"
+            />
           </div>
           <span class="text-xl font-bold text-gray-900 dark:text-white">
             {{ personalInfo.name.split(' ')[0] }}
