@@ -18,10 +18,10 @@
           <UButton
             v-for="category in categories"
             :key="category.value"
-              :color="selectedCategory === category.value ? 'primary' : 'neutral'"
+            :color="''"
             :variant="selectedCategory === category.value ? 'solid' : 'outline'"
             @click="selectedCategory = category.value"
-            :class="selectedCategory === category.value ? 'px-6 py-2 gradient-button' : 'px-6 py-2'"
+            :class="['px-6 py-2 hover:cursor-pointer', selectedCategory === category.value ? 'gradient-button' : '']"
           >
             {{ category.label }}
           </UButton>

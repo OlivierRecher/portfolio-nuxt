@@ -21,7 +21,7 @@
                 :href="link.url"
                 target="_blank"
                 rel="noopener noreferrer"
-                class="w-10 h-10 bg-gray-800 dark:bg-gray-800 rounded-full flex items-center justify-center hover:bg-blue-500 transition-colors duration-300"
+                class="w-12 h-12 bg-white dark:bg-gray-700 rounded-full flex items-center justify-center hover:bg-slate-100 transition-all duration-300 hover:scale-110 shadow-lg"
                 :aria-label="link.name"
               >
                 <UIcon :name="link.icon" class="w-5 h-5" />
@@ -160,9 +160,6 @@ const currentYear = computed(() => new Date().getFullYear())
   background-color: #e5e7eb;
 }
 
-.light footer .bg-gray-800:hover {
-  background-color: #3b82f6;
-}
 
 .light footer .border-gray-800 {
   border-color: #d1d5db;

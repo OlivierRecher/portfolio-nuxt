@@ -74,7 +74,7 @@
                   :href="link.url"
                   target="_blank"
                   rel="noopener noreferrer"
-                  class="w-12 h-12 bg-white dark:bg-gray-700 rounded-full flex items-center justify-center hover:bg-blue-500 hover:text-white transition-all duration-300 hover:scale-110 shadow-lg"
+                  class="w-12 h-12 bg-white dark:bg-gray-700 rounded-full flex items-center justify-center hover:bg-slate-100 transition-all duration-300 hover:scale-110 shadow-lg"
                   :aria-label="link.name"
                 >
                   <UIcon :name="link.icon" class="w-6 h-6" />
