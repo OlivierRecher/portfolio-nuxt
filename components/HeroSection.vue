@@ -52,7 +52,7 @@
             color="primary"
             variant="solid"
             @click="scrollToSection('projects')"
-            class="px-8 py-3 text-lg font-semibold hover:scale-105 transition-transform duration-300"
+            class="px-8 py-3 text-lg font-semibold hover:scale-105 transition-transform duration-300 gradient-button"
           >
             {{ $t('hero.cta.projects') }}
           </UButton>
@@ -295,6 +295,27 @@ const { personalInfo } = usePortfolioData()
     width: 120px !important;
     height: 120px !important;
   }
+}
+
+/* Gradient button styles */
+.gradient-button {
+  background: linear-gradient(135deg, #60a5fa 0%, #a855f7 50%, #ec4899 100%);
+  border: none;
+  color: white;
+}
+
+.gradient-button:hover {
+  background: linear-gradient(135deg, #3b82f6 0%, #8b5cf6 50%, #db2777 100%);
+  transform: scale(1.05);
+}
+
+/* Light mode gradient button */
+.light .gradient-button {
+  background: linear-gradient(135deg, #3b82f6 0%, #8b5cf6 50%, #ec4899 100%);
+}
+
+.light .gradient-button:hover {
+  background: linear-gradient(135deg, #2563eb 0%, #7c3aed 50%, #db2777 100%);
 }
 
 /* Light mode scroll indicator */
