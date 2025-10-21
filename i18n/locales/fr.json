@@ -1,0 +1,156 @@
+{
+  "nav": {
+    "about": "À Propos",
+    "skills": "Compétences",
+    "projects": "Projets",
+    "experience": "Expérience",
+    "contact": "Contact"
+  },
+  "hero": {
+    "title": "Développeur Full-Stack",
+    "subtitle": "Créateur d'expériences web modernes",
+    "description": "Passionné par le développement web et les technologies innovantes, je crée des applications performantes et des expériences utilisateur exceptionnelles.",
+    "cta": {
+      "projects": "Voir mes projets",
+      "contact": "Me contacter"
+    }
+  },
+  "about": {
+    "title": "À Propos",
+    "subtitle": "Créateur d'expériences web modernes",
+    "description": "Passionné par l'innovation et les technologies émergentes, je mets mon expertise au service de projets ambitieux. Mon approche combine créativité technique et rigueur méthodologique pour livrer des solutions robustes et évolutives.",
+    "points": {
+      "fullstack": {
+        "title": "Développement Full-Stack",
+        "description": "Expertise en frontend et backend avec les technologies modernes"
+      },
+      "design": {
+        "title": "Design & UX",
+        "description": "Sensibilité artistique et focus sur l'expérience utilisateur"
+      },
+      "performance": {
+        "title": "Performance",
+        "description": "Optimisation et mise en production d'applications scalables"
+      },
+      "learning": {
+        "title": "Formation Continue",
+        "description": "Veille technologique constante et apprentissage permanent"
+      }
+    },
+    "cta": {
+      "resume": "Télécharger CV",
+      "contact": "Me contacter"
+    }
+  },
+  "skills": {
+    "title": "Compétences",
+    "subtitle": "Technologies et outils que j'utilise pour créer des solutions modernes et performantes",
+    "categories": {
+      "frontend": "Frontend",
+      "backend": "Backend",
+      "tools": "Outils & DevOps"
+    },
+    "levels": {
+      "beginner": "Débutant",
+      "intermediate": "Intermédiaire",
+      "advanced": "Avancé",
+      "expert": "Expert"
+    }
+  },
+  "projects": {
+    "title": "Projets",
+    "subtitle": "Découvrez mes réalisations récentes et les technologies que j'utilise",
+    "filters": {
+      "all": "Tous",
+      "web": "Web",
+      "mobile": "Mobile",
+      "desktop": "Desktop",
+      "other": "Autres"
+    },
+    "actions": {
+      "details": "Détails",
+      "code": "Code",
+      "demo": "Demo"
+    },
+    "featured": "Projet phare",
+    "items": {
+      "portfolio": {
+        "title": "Portfolio 3D Interactif",
+        "description": "Portfolio moderne avec animations Three.js et design épuré",
+        "longDescription": "Un portfolio développé avec Nuxt 3, TypeScript et Three.js, mettant en avant des animations fluides et une expérience utilisateur immersive."
+      },
+      "ecommerce": {
+        "title": "E-commerce Vue.js",
+        "description": "Plateforme e-commerce complète avec panier et paiement",
+        "longDescription": "Application e-commerce développée avec Vue.js, incluant gestion des produits, panier, système de paiement et dashboard administrateur."
+      },
+      "dashboard": {
+        "title": "Dashboard Analytics",
+        "description": "Tableau de bord avec visualisations de données en temps réel",
+        "longDescription": "Dashboard interactif pour l'analyse de données avec graphiques dynamiques, filtres avancés et export de rapports."
+      }
+    }
+  },
+  "experience": {
+    "title": "Expérience",
+    "subtitle": "Mon parcours professionnel et mes réalisations",
+    "education": {
+      "title": "Formation"
+    },
+    "current": "Actuel",
+    "technologies": "Technologies"
+  },
+  "contact": {
+    "title": "Contact",
+    "subtitle": "Une idée de projet ? N'hésitez pas à me contacter !",
+    "info": {
+      "title": "Restons en contact",
+      "description": "Je suis toujours intéressé par de nouveaux projets et opportunités. N'hésitez pas à me contacter pour discuter de votre projet.",
+      "email": "Email",
+      "location": "Localisation",
+      "availability": "Disponibilité",
+      "response": "Réponse sous 24h",
+      "social": "Réseaux sociaux"
+    },
+    "form": {
+      "title": "Envoyez-moi un message",
+      "fields": {
+        "name": "Nom complet",
+        "email": "Email",
+        "subject": "Sujet",
+        "message": "Message"
+      },
+      "placeholders": {
+        "name": "Votre nom",
+        "subject": "Sujet de votre message",
+        "message": "Décrivez votre projet ou votre demande..."
+      },
+      "submit": "Envoyer le message",
+      "sending": "Envoi en cours...",
+      "success": {
+        "title": "Message envoyé !",
+        "description": "Merci pour votre message. Je vous répondrai dans les plus brefs délais."
+      },
+      "error": {
+        "title": "Erreur",
+        "description": "Une erreur est survenue lors de l'envoi du message. Veuillez réessayer."
+      }
+    }
+  },
+  "footer": {
+    "navigation": "Navigation",
+    "contact": "Contact",
+    "copyright": "Tous droits réservés.",
+    "backToTop": "Retour en haut"
+  },
+  "common": {
+    "loading": "Chargement...",
+    "error": "Erreur",
+    "success": "Succès",
+    "close": "Fermer",
+    "open": "Ouvrir",
+    "view": "Voir",
+    "download": "Télécharger",
+    "learnMore": "En savoir plus"
+  }
+}

@@ -1,0 +1,156 @@
+{
+  "nav": {
+    "about": "About",
+    "skills": "Skills",
+    "projects": "Projects",
+    "experience": "Experience",
+    "contact": "Contact"
+  },
+  "hero": {
+    "title": "Full-Stack Developer",
+    "subtitle": "Creator of modern web experiences",
+    "description": "Passionate about web development and innovative technologies, I create performant applications and exceptional user experiences.",
+    "cta": {
+      "projects": "View my projects",
+      "contact": "Contact me"
+    }
+  },
+  "about": {
+    "title": "About",
+    "subtitle": "Creator of modern web experiences",
+    "description": "Passionate about innovation and emerging technologies, I put my expertise at the service of ambitious projects. My approach combines technical creativity and methodological rigor to deliver robust and scalable solutions.",
+    "points": {
+      "fullstack": {
+        "title": "Full-Stack Development",
+        "description": "Expertise in frontend and backend with modern technologies"
+      },
+      "design": {
+        "title": "Design & UX",
+        "description": "Artistic sensibility and focus on user experience"
+      },
+      "performance": {
+        "title": "Performance",
+        "description": "Optimization and production deployment of scalable applications"
+      },
+      "learning": {
+        "title": "Continuous Learning",
+        "description": "Constant technological watch and continuous learning"
+      }
+    },
+    "cta": {
+      "resume": "Download CV",
+      "contact": "Contact me"
+    }
+  },
+  "skills": {
+    "title": "Skills",
+    "subtitle": "Technologies and tools I use to create modern and performant solutions",
+    "categories": {
+      "frontend": "Frontend",
+      "backend": "Backend",
+      "tools": "Tools & DevOps"
+    },
+    "levels": {
+      "beginner": "Beginner",
+      "intermediate": "Intermediate",
+      "advanced": "Advanced",
+      "expert": "Expert"
+    }
+  },
+  "projects": {
+    "title": "Projects",
+    "subtitle": "Discover my recent achievements and the technologies I use",
+    "filters": {
+      "all": "All",
+      "web": "Web",
+      "mobile": "Mobile",
+      "desktop": "Desktop",
+      "other": "Others"
+    },
+    "actions": {
+      "details": "Details",
+      "code": "Code",
+      "demo": "Demo"
+    },
+    "featured": "Featured project",
+    "items": {
+      "portfolio": {
+        "title": "Interactive 3D Portfolio",
+        "description": "Modern portfolio with Three.js animations and clean design",
+        "longDescription": "A portfolio developed with Nuxt 3, TypeScript and Three.js, showcasing smooth animations and an immersive user experience."
+      },
+      "ecommerce": {
+        "title": "Vue.js E-commerce",
+        "description": "Complete e-commerce platform with cart and payment",
+        "longDescription": "E-commerce application developed with Vue.js, including product management, cart, payment system and admin dashboard."
+      },
+      "dashboard": {
+        "title": "Analytics Dashboard",
+        "description": "Dashboard with real-time data visualizations",
+        "longDescription": "Interactive dashboard for data analysis with dynamic charts, advanced filters and report export."
+      }
+    }
+  },
+  "experience": {
+    "title": "Experience",
+    "subtitle": "My professional journey and achievements",
+    "education": {
+      "title": "Education"
+    },
+    "current": "Current",
+    "technologies": "Technologies"
+  },
+  "contact": {
+    "title": "Contact",
+    "subtitle": "Have a project idea? Don't hesitate to contact me!",
+    "info": {
+      "title": "Let's stay in touch",
+      "description": "I'm always interested in new projects and opportunities. Feel free to contact me to discuss your project.",
+      "email": "Email",
+      "location": "Location",
+      "availability": "Availability",
+      "response": "Response within 24h",
+      "social": "Social networks"
+    },
+    "form": {
+      "title": "Send me a message",
+      "fields": {
+        "name": "Full name",
+        "email": "Email",
+        "subject": "Subject",
+        "message": "Message"
+      },
+      "placeholders": {
+        "name": "Your name",
+        "subject": "Subject of your message",
+        "message": "Describe your project or request..."
+      },
+      "submit": "Send message",
+      "sending": "Sending...",
+      "success": {
+        "title": "Message sent!",
+        "description": "Thank you for your message. I will respond as soon as possible."
+      },
+      "error": {
+        "title": "Error",
+        "description": "An error occurred while sending the message. Please try again."
+      }
+    }
+  },
+  "footer": {
+    "navigation": "Navigation",
+    "contact": "Contact",
+    "copyright": "All rights reserved.",
+    "backToTop": "Back to top"
+  },
+  "common": {
+    "loading": "Loading...",
+    "error": "Error",
+    "success": "Success",
+    "close": "Close",
+    "open": "Open",
+    "view": "View",
+    "download": "Download",
+    "learnMore": "Learn more"
+  }
+}
