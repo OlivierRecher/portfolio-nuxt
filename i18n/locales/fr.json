@@ -7,9 +7,9 @@
     "contact": "Contact"
   },
   "hero": {
-    "title": "Développeur Full-Stack",
+    "title": "Ingénieur - Développeur Full-Stack",
     "subtitle": "Créateur d'expériences web modernes",
-    "description": "Passionné par le développement web et les technologies innovantes, je crée des applications performantes et des expériences utilisateur exceptionnelles.",
+    "description": "Passionné par le développement web et les technologies innovantes, je prends a coeur le développement de solutions robustes et pertinente centré sur l'expérience utilisateur.",
     "cta": {
       "projects": "Voir mes projets",
       "contact": "Me contacter"
@@ -18,7 +18,7 @@
   "about": {
     "title": "À Propos",
     "subtitle": "Créateur d'expériences web modernes",
-    "description": "Passionné par l'innovation et les technologies émergentes, je mets mon expertise au service de projets ambitieux. Mon approche combine créativité technique et rigueur méthodologique pour livrer des solutions robustes et évolutives.",
+    "description": "Passionné par le développement web et les technologies innovantes, je prends a coeur le développement de solutions robustes et pertinente centré sur l'expérience utilisateur.",
     "points": {
       "fullstack": {
         "title": "Développement Full-Stack",
@@ -94,10 +94,42 @@
   "experience": {
     "title": "Expérience",
     "subtitle": "Mon parcours professionnel et mes réalisations",
+    "items": {
+      "1": {
+        "id": "1",
+        "company": "Finvens",
+        "position": "Développeur Full-Stack Senior",
+        "startDate": "2023-09",
+        "current": true,
+        "description": [
+          "Migration d'une application critique (200+ utilisateurs quotidiens) de PHP 5 legacy vers Symfony",
+          "Optimisation des modèles de données et refonte des fonctionnalités, améliorant les performances et la maintenabilité",
+          "Collaboration avec les équipes (Produit, QA, Support) dans un contexte Agile"
+        ],
+        "technologies": ["Symfony", "Vue.js", "Nuxt.js", "PHP", "TypeScript", "Docker", "AWS", "REST API", "Tailwind CSS"],
+        "location": "Toulouse, France"
+      },
+      "2": {
+        "id": "2",
+        "company": "Sopra Steria",
+        "position": "Développeur Frontend",
+        "startDate": "2022-09",
+        "endDate": "2023-08",
+        "current": false,
+        "description": [
+          "Conception et déploiement d'un ERP personnalisé utilisé quotidiennement par 80+ employés dans 10 équipes",
+          "Développement d'outils de gestion web pour les plannings, réunions et congés payés",
+          "Direction du cycle de vie complet du projet : analyse des besoins, design UI/UX, architecture de base de données et implémentation"
+        ],
+        "technologies": ["JavaScript", "PHP", "MySQL", "Tailwind CSS", "UI/UX"],
+        "location": "Toulouse, France"
+      }
+    },
     "education": {
       "title": "Formation"
     },
     "current": "Actuel",
+    "present": "Actuel",
     "technologies": "Technologies"
   },
   "contact": {
@@ -152,5 +184,25 @@
     "view": "Voir",
     "download": "Télécharger",
     "learnMore": "En savoir plus"
-  }
+  },
+  "education": [
+    {
+      "id": "1",
+      "institution": "École nationale supérieure des mines d'Alès",
+      "degree": "École d'ingénieur",
+      "field": "Informatique, Développement et Réseaux",
+      "startDate": "2024",
+      "endDate": "2027",
+      "description": "Spécialisation en développement web et technologies émergentes"
+    },
+    {
+      "id": "2",
+      "institution": "Université Toulouse 2 Blagnac",
+      "degree": "Licence",
+      "field": "Informatique",
+      "startDate": "2015",
+      "endDate": "2018",
+      "description": "Spécialisation en développement web et technologies émergentes"
+    }
+  ]
 }

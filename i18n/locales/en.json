@@ -7,7 +7,7 @@
     "contact": "Contact"
   },
   "hero": {
-    "title": "Full-Stack Developer",
+    "title": "Engineer - Full-Stack Developer",
     "subtitle": "Creator of modern web experiences",
     "description": "Passionate about web development and innovative technologies, I create performant applications and exceptional user experiences.",
     "cta": {
@@ -94,10 +94,42 @@
   "experience": {
     "title": "Experience",
     "subtitle": "My professional journey and achievements",
+    "items": {
+      "1": {
+        "id": "1",
+        "company": "Finvens",
+        "position": "Senior Full-Stack Developer",
+        "startDate": "2023-09",
+        "current": true,
+        "description": [
+          "Migrated a business-critical application (200+ daily users) from legacy PHP 5 to Symfony",
+          "Optimized data models and led feature redesigns, improving performance and maintainability",
+          "Collaborated with teams (Product, QA, Support) in Agile context"
+        ],
+        "technologies": ["Symfony", "Vue.js", "Nuxt.js", "PHP", "TypeScript", "Docker", "AWS", "REST API", "Tailwind CSS"],
+        "location": "Toulouse, France"
+      },
+      "2": {
+        "id": "2",
+        "company": "Sopra Steria",
+        "position": "Frontend Developer",
+        "startDate": "2022-09",
+        "endDate": "2023-08",
+        "current": false,
+        "description": [
+          "Designed and deployed a custom ERP used daily by 80+ employees across 10 teams",
+          "Built web-based management tools for schedules, meetings, and paid leave",
+          "Directed the full project lifecycle: requirements analysis, UI/UX design, database architecture, and implementation"
+        ],
+        "technologies": ["JavaScript", "PHP", "MySQL", "Tailwind CSS", "UI/UX"],
+        "location": "Toulouse, France"
+      }
+    },
     "education": {
       "title": "Education"
     },
     "current": "Current",
+    "present": "Present",
     "technologies": "Technologies"
   },
   "contact": {
@@ -152,5 +184,25 @@
     "view": "View",
     "download": "Download",
     "learnMore": "Learn more"
-  }
+  },
+  "education": [
+    {
+      "id": "1",
+      "institution": "École nationale supérieure des mines d'Alès",
+      "degree": "Engineering School",
+      "field": "Computer Science, Development and Networks",
+      "startDate": "2024",
+      "endDate": "2027",
+      "description": "Specialization in web development and emerging technologies"
+    },
+    {
+      "id": "2",
+      "institution": "Université Toulouse 2 Blagnac",
+      "degree": "Bachelor",
+      "field": "Computer Science",
+      "startDate": "2015",
+      "endDate": "2018",
+      "description": "Specialization in web development and emerging technologies"
+    }
+  ]
 }
