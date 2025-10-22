@@ -21,23 +21,35 @@ export const usePortfolioData = () => {
     // Frontend
     { name: 'Vue.js', icon: 'i-logos-vue', category: 'frontend', level: 'expert', description: 'Framework JavaScript moderne' },
     { name: 'Nuxt.js', icon: 'i-logos-nuxt-icon', category: 'frontend', level: 'expert', description: 'Framework Vue.js full-stack' },
-    { name: 'React', icon: 'i-logos-react', category: 'frontend', level: 'advanced', description: 'Bibliothèque UI JavaScript' },
-    { name: 'TypeScript', icon: 'i-logos-typescript-icon', category: 'frontend', level: 'expert', description: 'JavaScript typé' },
+    { name: 'React', icon: 'i-logos-react', category: 'frontend', level: 'intermediate', description: 'Bibliothèque UI JavaScript' },
+    { name: 'TypeScript', icon: 'i-logos-typescript-icon', category: 'frontend', level: 'advanced', description: 'JavaScript typé' },
+    { name: 'JavaScript', icon: 'i-logos-javascript', category: 'frontend', level: 'advanced', description: 'JavaScript' },
     { name: 'Tailwind CSS', icon: 'i-logos-tailwindcss-icon', category: 'frontend', level: 'expert', description: 'Framework CSS utilitaire' },
-    { name: 'Three.js', icon: 'i-logos-threejs', category: 'frontend', level: 'advanced', description: 'Bibliothèque 3D WebGL' },
-    { name: 'GSAP', icon: 'i-logos-gsap', category: 'frontend', level: 'advanced', description: 'Bibliothèque d\'animations' },
+    { name: 'Flutter', icon: 'i-logos-flutter', category: 'frontend', level: 'intermediate', description: 'Framework mobile cross-platform' },
     
     // Backend
+    { name: 'Symfony', icon: 'i-logos-symfony', category: 'backend', level: 'advanced', description: 'Framework PHP' },
+    { name: 'PHP', icon: 'i-logos-php', category: 'backend', level: 'advanced', description: 'PHP' },
     { name: 'Node.js', icon: 'i-logos-nodejs-icon', category: 'backend', level: 'advanced', description: 'Runtime JavaScript' },
     { name: 'Express', icon: 'i-logos-express', category: 'backend', level: 'advanced', description: 'Framework web Node.js' },
-    { name: 'PostgreSQL', icon: 'i-logos-postgresql', category: 'backend', level: 'intermediate', description: 'Base de données relationnelle' },
+    { name: 'SQL', icon: 'i-logos-mysql', category: 'backend', level: 'advanced', description: 'Langage de requête base de données' },
     { name: 'MongoDB', icon: 'i-logos-mongodb-icon', category: 'backend', level: 'intermediate', description: 'Base de données NoSQL' },
+    { name: 'C', icon: 'i-logos-c', category: 'backend', level: 'intermediate', description: 'Langage de programmation système' },
+    { name: 'Hugo', icon: 'i-logos-hugo', category: 'backend', level: 'beginner', description: 'Générateur de site statique' },
+    { name: 'Python', icon: 'i-logos-python', category: 'backend', level: 'intermediate', description: 'Langage de programmation polyvalent' },
     
-    // Tools
+    // Tools & DevOps
     { name: 'Git', icon: 'i-logos-git-icon', category: 'tools', level: 'expert', description: 'Contrôle de version' },
-    { name: 'Docker', icon: 'i-logos-docker-icon', category: 'tools', level: 'intermediate', description: 'Conteneurisation' },
+    { name: 'GitLab', icon: 'i-logos-gitlab', category: 'tools', level: 'advanced', description: 'DevOps et Git' },
+    { name: 'GitHub', icon: 'i-logos-github-icon', category: 'tools', level: 'intermediate', description: 'Plateforme Git' },
+    { name: 'Docker', icon: 'i-logos-docker-icon', category: 'tools', level: 'advanced', description: 'Conteneurisation' },
+    { name: 'CI/CD', icon: 'i-logos-github-actions', category: 'tools', level: 'intermediate', description: 'Intégration et déploiement continu' },
     { name: 'AWS', icon: 'i-logos-aws', category: 'tools', level: 'intermediate', description: 'Cloud computing' },
-    { name: 'Vercel', icon: 'i-logos-vercel-icon', category: 'tools', level: 'advanced', description: 'Plateforme de déploiement' }
+    { name: 'Vercel', icon: 'i-logos-vercel-icon', category: 'tools', level: 'advanced', description: 'Plateforme de déploiement' },
+    { name: 'Vite', icon: 'i-logos-vitejs', category: 'frontend', level: 'intermediate', description: 'Build tool moderne' },
+    { name: 'Bash', icon: 'i-logos-bash', category: 'tools', level: 'advanced', description: 'Scripting shell Unix/Linux' },
+    { name: 'Postman', icon: 'i-logos-postman-icon', category: 'tools', level: 'intermediate', description: 'Test d\'APIs' },
+    { name: 'Bruno', icon: 'i-simple-icons-bruno', category: 'tools', level: 'advanced', description: 'Client API alternatif' },
   ]
 
   const projects: Project[] = [
