@@ -32,16 +32,6 @@
                     <UIcon :name="skill.icon" class="w-8 h-8 text-gray-700 dark:text-gray-300" />
                   </div>
                   <h4 class="font-semibold text-gray-900 dark:text-white mb-1">{{ skill.name }}</h4>
-                  <div class="flex justify-center">
-                    <div class="flex space-x-1">
-                      <div
-                        v-for="i in 4"
-                        :key="i"
-                        class="w-2 h-2 rounded-full"
-                        :class="i <= getLevelNumber(skill.level) ? 'bg-blue-500' : 'bg-gray-300 dark:bg-gray-600'"
-                      ></div>
-                    </div>
-                  </div>
                 </div>
                 
                 <!-- Hover effect -->
@@ -67,16 +57,6 @@
                     <UIcon :name="skill.icon" class="w-8 h-8 text-gray-700 dark:text-gray-300" />
                   </div>
                   <h4 class="font-semibold text-gray-900 dark:text-white mb-1">{{ skill.name }}</h4>
-                  <div class="flex justify-center">
-                    <div class="flex space-x-1">
-                      <div
-                        v-for="i in 4"
-                        :key="i"
-                        class="w-2 h-2 rounded-full"
-                        :class="i <= getLevelNumber(skill.level) ? 'bg-green-500' : 'bg-gray-300 dark:bg-gray-600'"
-                      ></div>
-                    </div>
-                  </div>
                 </div>
                 
                 <!-- Hover effect -->
@@ -102,16 +82,6 @@
                     <UIcon :name="skill.icon" class="w-8 h-8 text-gray-700 dark:text-gray-300" />
                   </div>
                   <h4 class="font-semibold text-gray-900 dark:text-white mb-1">{{ skill.name }}</h4>
-                  <div class="flex justify-center">
-                    <div class="flex space-x-1">
-                      <div
-                        v-for="i in 4"
-                        :key="i"
-                        class="w-2 h-2 rounded-full"
-                        :class="i <= getLevelNumber(skill.level) ? 'bg-purple-500' : 'bg-gray-300 dark:bg-gray-600'"
-                      ></div>
-                    </div>
-                  </div>
                 </div>
                 
                 <!-- Hover effect -->
@@ -144,19 +114,4 @@ const backendSkills = computed(() =>
 const toolsSkills = computed(() => 
   skills.filter(skill => skill.category === 'tools')
 )
-
-const getLevelNumber = (level: string): number => {
-  const levels = { beginner: 1, intermediate: 2, advanced: 3, expert: 4 }
-  return levels[level as keyof typeof levels] || 1
-}
-
-const getLevelLabel = (level: string): string => {
-  const labels = { 
-    beginner: 'Débutant', 
-    intermediate: 'Intermédiaire', 
-    advanced: 'Avancé', 
-    expert: 'Expert' 
-  }
-  return labels[level as keyof typeof labels] || 'Débutant'
-}
 </script>
