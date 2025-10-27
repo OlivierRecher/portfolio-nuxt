@@ -5,7 +5,6 @@ export const usePortfolioData = () => {
     name: 'Olivier Recher',
     title: 'Développeur Full-Stack',
     subtitle: 'Créateur d\'expériences web modernes',
-    description: 'Passionné par le développement web et les technologies innovantes, je crée des applications performantes et des expériences utilisateur exceptionnelles.',
     location: 'France',
     email: 'recher.olivier@outlook.fr',
     avatar: '/images/avatar.jpeg',

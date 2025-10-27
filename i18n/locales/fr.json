@@ -9,7 +9,7 @@
   "hero": {
     "title": "Ingénieur - Développeur Full-Stack",
     "subtitle": "Créateur d'expériences web modernes",
-    "description": "Passionné par le développement web et les technologies innovantes, je prends a coeur le développement de solutions robustes et pertinente centré sur l'expérience utilisateur.",
+    "description": "Passionné par le développement web, je prends a coeur le développement de solutions robustes et pertinente centré sur l'expérience utilisateur.",
     "cta": {
       "projects": "Voir mes projets",
       "contact": "Me contacter"
@@ -49,12 +49,6 @@
       "frontend": "Frontend",
       "backend": "Backend",
       "tools": "Outils & DevOps"
-    },
-    "levels": {
-      "beginner": "Débutant",
-      "intermediate": "Intermédiaire",
-      "advanced": "Avancé",
-      "expert": "Expert"
     }
   },
   "projects": {
@@ -173,7 +167,14 @@
     "navigation": "Navigation",
     "contact": "Contact",
     "copyright": "Tous droits réservés.",
-    "backToTop": "Retour en haut"
+    "backToTop": "Retour en haut",
+    "links": {
+      "about": "À Propos",
+      "skills": "Compétences",
+      "projects": "Projets",
+      "experience": "Expérience",
+      "contact": "Contact"
+    }
   },
   "common": {
     "loading": "Chargement...",

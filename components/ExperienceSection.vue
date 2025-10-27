@@ -4,10 +4,10 @@
       <div class="max-w-4xl mx-auto">
         <div class="text-center mb-16">
           <h2 class="text-4xl md:text-5xl font-bold mb-4 text-gray-900 dark:text-white">
-            Expérience
+            {{ $t('experience.title') }}
           </h2>
           <p class="text-lg text-gray-600 dark:text-gray-300 max-w-2xl mx-auto">
-            Mon parcours professionnel et mes réalisations
+            {{ $t('experience.subtitle') }}
           </p>
           <div class="w-24 h-1 bg-gradient-to-r from-blue-500 to-purple-500 mx-auto rounded-full mt-4"></div>
         </div>
@@ -48,11 +48,11 @@
                     <div class="mt-2 md:mt-0 text-right">
                       <div class="text-sm font-medium text-gray-900 dark:text-white">
                         {{ formatDate(experience.startDate) }} - 
-                        {{ experience.current ? 'Présent' : formatDate(experience.endDate!) }}
+                        {{ experience.current ? $t('experience.present') : formatDate(experience.endDate!) }}
                       </div>
                       <div v-if="experience.current" class="inline-flex items-center px-2 py-1 bg-green-100 dark:bg-green-900/30 text-green-700 dark:text-green-300 rounded-full text-xs font-medium mt-1">
                         <div class="w-2 h-2 bg-green-500 rounded-full mr-1"></div>
-                        Actuel
+                        {{ $t('experience.current') }}
                       </div>
                     </div>
                   </div>
@@ -73,7 +73,7 @@
 
                   <!-- Technologies -->
                   <div>
-                    <h5 class="text-sm font-semibold text-gray-900 dark:text-white mb-2">Technologies :</h5>
+                    <h5 class="text-sm font-semibold text-gray-900 dark:text-white mb-2">{{ $t('experience.technologies') }} :</h5>
                     <div class="flex flex-wrap gap-2">
                       <span
                         v-for="tech in experience.technologies"
@@ -93,7 +93,7 @@
         <!-- Education Section -->
         <div class="mt-20">
           <h3 class="text-3xl font-bold text-center mb-12 text-gray-900 dark:text-white">
-            Formation
+            {{ $t('experience.education.title') }}
           </h3>
           
           <div class="grid md:grid-cols-2 gap-8">

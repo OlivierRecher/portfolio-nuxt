@@ -5,10 +5,10 @@
         <!-- Section Header -->
         <div class="text-center mb-16">
           <h2 class="text-4xl md:text-5xl font-bold mb-4 text-gray-900 dark:text-white">
-            Projets
+            {{ $t('projects.title') }}
           </h2>
           <p class="text-lg text-gray-600 dark:text-gray-300 max-w-2xl mx-auto mb-8">
-            Découvrez mes réalisations récentes et les technologies que j'utilise
+            {{ $t('projects.subtitle') }}
           </p>
           <div class="w-24 h-1 bg-gradient-to-r from-blue-500 to-purple-500 mx-auto rounded-full"></div>
         </div>
@@ -46,7 +46,7 @@
               <!-- Featured Badge -->
               <div v-if="project.featured" class="absolute top-4 left-4">
                 <span class="bg-gradient-to-r from-yellow-400 to-orange-500 text-white px-3 py-1 rounded-full text-sm font-semibold">
-                  ⭐ Projet phare
+                  ⭐ {{ $t('projects.featured') }}
                 </span>
               </div>
 
@@ -70,7 +70,7 @@
                     class="px-6"
                   >
                     <UIcon name="i-simple-icons-github" class="w-5 h-5 mr-2" />
-                    Code
+                    {{ $t('projects.actions.code') }}
                   </UButton>
                   <UButton
                     v-if="project.liveUrl"
@@ -82,7 +82,7 @@
                     class="px-6"
                   >
                     <UIcon name="i-heroicons-arrow-top-right-on-square" class="w-5 h-5 mr-2" />
-                    Demo
+                    {{ $t('projects.actions.demo') }}
                   </UButton>
                 </div>
               </div>
@@ -158,13 +158,13 @@ const { projects } = usePortfolioData()
 
 const selectedCategory = ref('all')
 
-const categories = [
-  { label: 'Tous', value: 'all' },
-  { label: 'Web', value: 'web' },
-  { label: 'Mobile', value: 'mobile' },
-  { label: 'Desktop', value: 'desktop' },
-  { label: 'Autres', value: 'other' }
-]
+const categories = computed(() => [
+  { label: $t('projects.filters.all'), value: 'all' },
+  { label: $t('projects.filters.web'), value: 'web' },
+  { label: $t('projects.filters.mobile'), value: 'mobile' },
+  { label: $t('projects.filters.desktop'), value: 'desktop' },
+  { label: $t('projects.filters.other'), value: 'other' }
+])
 
 const filteredProjects = computed(() => {
   if (selectedCategory.value === 'all') {

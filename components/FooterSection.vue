@@ -10,7 +10,7 @@
               {{ personalInfo.name }}
             </h3>
             <p class="text-gray-300 dark:text-gray-300 mb-6 max-w-md">
-              {{ personalInfo.description }}
+              //TODO: rewrite this
             </p>
             
             <!-- Social Links -->
@@ -31,7 +31,7 @@
 
           <!-- Quick Links -->
           <div>
-            <h4 class="text-lg font-semibold mb-4">Navigation</h4>
+            <h4 class="text-lg font-semibold mb-4">{{ $t('footer.navigation') }}</h4>
             <ul class="space-y-2">
               <li>
                 <a 
@@ -39,7 +39,7 @@
                   @click="scrollToSection('about')"
                   class="text-gray-300 dark:text-gray-300 hover:text-white dark:hover:text-white transition-colors duration-300"
                 >
-                  À Propos
+                  {{ $t('footer.links.about') }}
                 </a>
               </li>
               <li>
@@ -48,7 +48,7 @@
                   @click="scrollToSection('skills')"
                   class="text-gray-300 dark:text-gray-300 hover:text-white dark:hover:text-white transition-colors duration-300"
                 >
-                  Compétences
+                  {{ $t('footer.links.skills') }}
                 </a>
               </li>
               <li>
@@ -57,7 +57,7 @@
                   @click="scrollToSection('projects')"
                   class="text-gray-300 dark:text-gray-300 hover:text-white dark:hover:text-white transition-colors duration-300"
                 >
-                  Projets
+                  {{ $t('footer.links.projects') }}
                 </a>
               </li>
               <li>
@@ -66,7 +66,7 @@
                   @click="scrollToSection('experience')"
                   class="text-gray-300 dark:text-gray-300 hover:text-white dark:hover:text-white transition-colors duration-300"
                 >
-                  Expérience
+                  {{ $t('footer.links.experience') }}
                 </a>
               </li>
               <li>
@@ -75,7 +75,7 @@
                   @click="scrollToSection('contact')"
                   class="text-gray-300 dark:text-gray-300 hover:text-white dark:hover:text-white transition-colors duration-300"
                 >
-                  Contact
+                  {{ $t('footer.links.contact') }}
                 </a>
               </li>
             </ul>
@@ -83,7 +83,7 @@
 
           <!-- Contact Info -->
           <div>
-            <h4 class="text-lg font-semibold mb-4">Contact</h4>
+            <h4 class="text-lg font-semibold mb-4">{{ $t('footer.contact') }}</h4>
             <div class="space-y-3">
               <div class="flex items-center space-x-3">
                 <UIcon name="i-heroicons-envelope" class="w-5 h-5 text-blue-400" />
@@ -106,7 +106,7 @@
         <div class="border-t border-gray-800 dark:border-gray-800 pt-8">
           <div class="flex flex-col md:flex-row justify-between items-center">
             <div class="text-gray-400 dark:text-gray-400 text-sm mb-4 md:mb-0">
-              © {{ currentYear }} {{ personalInfo.name }}. Tous droits réservés.
+              © {{ currentYear }} {{ personalInfo.name }}. {{ $t('footer.copyright') }}
             </div>
             
             <!-- Back to Top Button -->
@@ -118,7 +118,7 @@
               class="flex items-center space-x-2"
             >
               <UIcon name="i-heroicons-arrow-up" class="w-4 h-4" />
-              <span>Retour en haut</span>
+              <span>{{ $t('footer.backToTop') }}</span>
             </UButton>
           </div>
         </div>

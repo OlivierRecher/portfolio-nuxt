@@ -5,10 +5,10 @@
         <!-- Section Header -->
         <div class="text-center mb-16">
           <h2 class="text-4xl md:text-5xl font-bold mb-4 text-gray-900 dark:text-white">
-            Compétences
+            {{ $t('skills.title') }}
           </h2>
           <p class="text-lg text-gray-600 dark:text-gray-300 max-w-2xl mx-auto">
-            Technologies et outils que j'utilise pour créer des solutions modernes et performantes
+            {{ $t('skills.subtitle') }}
           </p>
           <div class="w-24 h-1 bg-gradient-to-r from-blue-500 to-purple-500 mx-auto rounded-full mt-4"></div>
         </div>
@@ -19,7 +19,7 @@
           <div>
             <h3 class="text-2xl font-semibold mb-6 text-gray-900 dark:text-white flex items-center">
               <UIcon name="i-heroicons-computer-desktop" class="w-6 h-6 mr-3 text-blue-500" />
-              Frontend
+              {{ $t('skills.categories.frontend') }}
             </h3>
             <div class="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4">
               <div
@@ -54,7 +54,7 @@
           <div>
             <h3 class="text-2xl font-semibold mb-6 text-gray-900 dark:text-white flex items-center">
               <UIcon name="i-heroicons-server" class="w-6 h-6 mr-3 text-green-500" />
-              Backend
+              {{ $t('skills.categories.backend') }}
             </h3>
             <div class="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4">
               <div
@@ -89,7 +89,7 @@
           <div>
             <h3 class="text-2xl font-semibold mb-6 text-gray-900 dark:text-white flex items-center">
               <UIcon name="i-heroicons-wrench-screwdriver" class="w-6 h-6 mr-3 text-purple-500" />
-              Outils & DevOps
+              {{ $t('skills.categories.tools') }}
             </h3>
             <div class="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4">
               <div

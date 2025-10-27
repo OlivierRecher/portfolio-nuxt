@@ -49,12 +49,6 @@
       "frontend": "Frontend",
       "backend": "Backend",
       "tools": "Tools & DevOps"
-    },
-    "levels": {
-      "beginner": "Beginner",
-      "intermediate": "Intermediate",
-      "advanced": "Advanced",
-      "expert": "Expert"
     }
   },
   "projects": {
@@ -173,7 +167,14 @@
     "navigation": "Navigation",
     "contact": "Contact",
     "copyright": "All rights reserved.",
-    "backToTop": "Back to top"
+    "backToTop": "Back to top",
+    "links": {
+      "about": "About",
+      "skills": "Skills",
+      "projects": "Projects",
+      "experience": "Experience",
+      "contact": "Contact"
+    }
   },
   "common": {
     "loading": "Loading...",

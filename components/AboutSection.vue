@@ -18,12 +18,10 @@
                 {{ personalInfo.subtitle }}
               </h3>
               <p class="text-lg text-gray-600 dark:text-gray-300 leading-relaxed mb-6">
-                {{ personalInfo.description }}
+                TODO: rewrite this
               </p>
               <p class="text-gray-600 dark:text-gray-300 leading-relaxed">
-                Passionné par l'innovation et les technologies émergentes, je mets mon expertise 
-                au service de projets ambitieux. Mon approche combine créativité technique et 
-                rigueur méthodologique pour livrer des solutions robustes et évolutives.
+                TODO: rewrite this
               </p>
             </div>
 
@@ -34,9 +32,9 @@
                   <UIcon name="i-heroicons-code-bracket" class="w-4 h-4 text-white" />
                 </div>
                 <div>
-                  <h4 class="font-semibold text-gray-900 dark:text-white mb-1">Développement Full-Stack</h4>
+                  <h4 class="font-semibold text-gray-900 dark:text-white mb-1">{{ $t('about.points.fullstack.title') }}</h4>
                   <p class="text-sm text-gray-600 dark:text-gray-300">
-                    Expertise en frontend et backend avec les technologies modernes
+                    {{ $t('about.points.fullstack.description') }}
                   </p>
                 </div>
               </div>
@@ -46,9 +44,9 @@
                   <UIcon name="i-heroicons-paint-brush" class="w-4 h-4 text-white" />
                 </div>
                 <div>
-                  <h4 class="font-semibold text-gray-900 dark:text-white mb-1">Design & UX</h4>
+                  <h4 class="font-semibold text-gray-900 dark:text-white mb-1">{{ $t('about.points.design.title') }}</h4>
                   <p class="text-sm text-gray-600 dark:text-gray-300">
-                    Sensibilité artistique et focus sur l'expérience utilisateur
+                    {{ $t('about.points.design.description') }}
                   </p>
                 </div>
               </div>
@@ -58,9 +56,9 @@
                   <UIcon name="i-heroicons-rocket-launch" class="w-4 h-4 text-white" />
                 </div>
                 <div>
-                  <h4 class="font-semibold text-gray-900 dark:text-white mb-1">Performance</h4>
+                  <h4 class="font-semibold text-gray-900 dark:text-white mb-1">{{ $t('about.points.performance.title') }}</h4>
                   <p class="text-sm text-gray-600 dark:text-gray-300">
-                    Optimisation et mise en production d'applications scalables
+                    {{ $t('about.points.performance.description') }}
                   </p>
                 </div>
               </div>
@@ -70,9 +68,9 @@
                   <UIcon name="i-heroicons-academic-cap" class="w-4 h-4 text-white" />
                 </div>
                 <div>
-                  <h4 class="font-semibold text-gray-900 dark:text-white mb-1">Formation Continue</h4>
+                  <h4 class="font-semibold text-gray-900 dark:text-white mb-1">{{ $t('about.points.learning.title') }}</h4>
                   <p class="text-sm text-gray-600 dark:text-gray-300">
-                    Veille technologique constante et apprentissage permanent
+                    {{ $t('about.points.learning.description') }}
                   </p>
                 </div>
               </div>

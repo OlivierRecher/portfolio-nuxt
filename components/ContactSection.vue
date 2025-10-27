@@ -5,10 +5,10 @@
         <!-- Section Header -->
         <div class="text-center mb-16">
           <h2 class="text-4xl md:text-5xl font-bold mb-4 text-gray-900 dark:text-white">
-            Contact
+            {{ $t('contact.title') }}
           </h2>
           <p class="text-lg text-gray-600 dark:text-gray-300 max-w-2xl mx-auto">
-            Une idée de projet ? N'hésitez pas à me contacter !
+            {{ $t('contact.subtitle') }}
           </p>
           <div class="w-24 h-1 bg-gradient-to-r from-blue-500 to-purple-500 mx-auto rounded-full mt-4"></div>
         </div>
@@ -18,11 +18,10 @@
           <div class="space-y-8">
             <div>
               <h3 class="text-2xl font-bold text-gray-900 dark:text-white mb-6">
-                Restons en contact
+                {{ $t('contact.info.title') }}
               </h3>
               <p class="text-gray-600 dark:text-gray-300 mb-8">
-                Je suis toujours intéressé par de nouveaux projets et opportunités. 
-                N'hésitez pas à me contacter pour discuter de votre projet.
+                {{ $t('contact.info.description') }}
               </p>
             </div>
 
@@ -33,7 +32,7 @@
                   <UIcon name="i-heroicons-envelope" class="w-6 h-6 text-white" />
                 </div>
                 <div>
-                  <h4 class="font-semibold text-gray-900 dark:text-white">Email</h4>
+                  <h4 class="font-semibold text-gray-900 dark:text-white">{{ $t('contact.info.email') }}</h4>
                   <a 
                     :href="`mailto:recher.olivier@outlook.fr`"
                     class="text-blue-600 dark:text-blue-400 hover:underline"
@@ -48,7 +47,7 @@
                   <UIcon name="i-heroicons-map-pin" class="w-6 h-6 text-white" />
                 </div>
                 <div>
-                  <h4 class="font-semibold text-gray-900 dark:text-white">Localisation</h4>
+                  <h4 class="font-semibold text-gray-900 dark:text-white">{{ $t('contact.info.location') }}</h4>
                   <p class="text-gray-600 dark:text-gray-300">{{ personalInfo.location }}</p>
                 </div>
               </div>
@@ -58,15 +57,15 @@
                   <UIcon name="i-heroicons-clock" class="w-6 h-6 text-white" />
                 </div>
                 <div>
-                  <h4 class="font-semibold text-gray-900 dark:text-white">Disponibilité</h4>
-                  <p class="text-gray-600 dark:text-gray-300">Réponse sous 24h</p>
+                  <h4 class="font-semibold text-gray-900 dark:text-white">{{ $t('contact.info.availability') }}</h4>
+                  <p class="text-gray-600 dark:text-gray-300">{{ $t('contact.info.response') }}</p>
                 </div>
               </div>
             </div>
 
             <!-- Social Links -->
             <div>
-              <h4 class="font-semibold text-gray-900 dark:text-white mb-4">Réseaux sociaux</h4>
+              <h4 class="font-semibold text-gray-900 dark:text-white mb-4">{{ $t('contact.info.social') }}</h4>
               <div class="flex space-x-4">
                 <a
                   v-for="link in personalInfo.socialLinks"
@@ -86,7 +85,7 @@
           <!-- Contact Form -->
           <div class="bg-white dark:bg-gray-800 rounded-2xl p-8 shadow-xl">
             <h3 class="text-2xl font-bold text-gray-900 dark:text-white mb-6">
-              Envoyez-moi un message
+              {{ $t('contact.form.title') }}
             </h3>
 
             <UForm
@@ -95,15 +94,15 @@
               @submit="onSubmit"
               class="space-y-6"
             >
-              <UFormGroup label="Nom complet" name="name" required>
+              <UFormGroup :label="$t('contact.form.fields.name')" name="name" required>
                 <UInput
                   v-model="form.name"
-                  placeholder="Votre nom"
+                  :placeholder="$t('contact.form.placeholders.name')"
                   size="lg"
                 />
               </UFormGroup>
 
-              <UFormGroup label="Email" name="email" required>
+              <UFormGroup :label="$t('contact.form.fields.email')" name="email" required>
                 <UInput
                   v-model="form.email"
                   type="email"
@@ -112,18 +111,18 @@
                 />
               </UFormGroup>
 
-              <UFormGroup label="Sujet" name="subject" required>
+              <UFormGroup :label="$t('contact.form.fields.subject')" name="subject" required>
                 <UInput
                   v-model="form.subject"
-                  placeholder="Sujet de votre message"
+                  :placeholder="$t('contact.form.placeholders.subject')"
                   size="lg"
                 />
               </UFormGroup>
 
-              <UFormGroup label="Message" name="message" required>
+              <UFormGroup :label="$t('contact.form.fields.message')" name="message" required>
                 <UTextarea
                   v-model="form.message"
-                  placeholder="Décrivez votre projet ou votre demande..."
+                  :placeholder="$t('contact.form.placeholders.message')"
                   :rows="5"
                   size="lg"
                 />
@@ -137,7 +136,7 @@
                 class="w-full gradient-button"
               >
                 <UIcon name="i-heroicons-paper-airplane" class="w-5 h-5 mr-2" />
-                {{ isSubmitting ? 'Envoi en cours...' : 'Envoyer le message' }}
+                {{ isSubmitting ? $t('contact.form.sending') : $t('contact.form.submit') }}
               </UButton>
             </UForm>
 
@@ -146,8 +145,8 @@
               v-if="isSuccess"
               color="success"
               variant="soft"
-              title="Message envoyé !"
-              description="Merci pour votre message. Je vous répondrai dans les plus brefs délais."
+              :title="$t('contact.form.success.title')"
+              :description="$t('contact.form.success.description')"
               class="mt-6"
             />
 
@@ -156,7 +155,7 @@
               v-if="isError"
               color="error"
               variant="soft"
-              title="Erreur"
+              :title="$t('contact.form.error.title')"
               :description="errorMessage"
               class="mt-6"
             />
