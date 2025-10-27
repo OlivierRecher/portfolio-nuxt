@@ -8,7 +8,6 @@
   },
   "hero": {
     "title": "Ingénieur - Développeur Full-Stack",
-    "subtitle": "Créateur d'expériences web modernes",
     "description": "Passionné par le développement web, je prends a coeur le développement de solutions robustes et pertinente centré sur l'expérience utilisateur.",
     "cta": {
       "projects": "Voir mes projets",
@@ -17,8 +16,11 @@
   },
   "about": {
     "title": "À Propos",
-    "subtitle": "Créateur d'expériences web modernes",
-    "description": "Passionné par le développement web et les technologies innovantes, je prends a coeur le développement de solutions robustes et pertinente centré sur l'expérience utilisateur.",
+    "subtitle": "Concevoir et bâtir le web de demain",
+    "description": "Je suis un apprenti français en deuxième année d'école d'ingénieur, avec quatre années d'expérience en tant que développeur web. Actuellement à la recherche d'un stage de 9 semaines à l'étranger pour acquérir une expérience pratique et améliorer mes compétences. J'aime collaborer avec les autres, apprendre de nouvelles technologies et relever des défis avec un état d'esprit proactif.",
+    "hobbies": "Le sport et les voyages occupent une place importante dans ma vie : ils nourrissent ma curiosité, mon sens du dépassement et mon ouverture d’esprit.",
+    "yearsExperience": "Années d'expérience",
+    "available": "Disponible",
     "points": {
       "fullstack": {
         "title": "Développement Full-Stack",
@@ -134,7 +136,6 @@
       "description": "Je suis toujours intéressé par de nouveaux projets et opportunités. N'hésitez pas à me contacter pour discuter de votre projet.",
       "email": "Email",
       "location": "Localisation",
-      "availability": "Disponibilité",
       "response": "Réponse sous 24h",
       "social": "Réseaux sociaux"
     },

@@ -57,7 +57,7 @@
                   <UIcon name="i-heroicons-clock" class="w-6 h-6 text-white" />
                 </div>
                 <div>
-                  <h4 class="font-semibold text-gray-900 dark:text-white">{{ $t('contact.info.availability') }}</h4>
+                  <h4 class="font-semibold text-gray-900 dark:text-white">{{ $t('about.available') }}</h4>
                   <p class="text-gray-600 dark:text-gray-300">{{ $t('contact.info.response') }}</p>
                 </div>
               </div>

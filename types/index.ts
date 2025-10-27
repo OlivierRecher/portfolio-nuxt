@@ -55,8 +55,6 @@ export interface SocialLink {
 
 export interface PersonalInfo {
   name: string
-  title: string
-  subtitle: string
   location: string
   email: string
   phone?: string

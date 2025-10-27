@@ -8,7 +8,6 @@
   },
   "hero": {
     "title": "Engineer - Full-Stack Developer",
-    "subtitle": "Creator of modern web experiences",
     "description": "Passionate about web development and innovative technologies, I create performant applications and exceptional user experiences.",
     "cta": {
       "projects": "View my projects",
@@ -17,8 +16,11 @@
   },
   "about": {
     "title": "About",
-    "subtitle": "Creator of modern web experiences",
-    "description": "Passionate about innovation and emerging technologies, I put my expertise at the service of ambitious projects. My approach combines technical creativity and methodological rigor to deliver robust and scalable solutions.",
+    "subtitle": "Designing the future of the web",
+    "description": "I am a French apprentice in my second year of engineering school, with four years of experience as a web developer. Currently looking for a 9-week internship abroad to gain practical experience and enhance my skills. I enjoy collaborating with others, learning new technologies, and tackling challenges with a proactive mindset.",
+    "hobbies": "Sports and travel play an important role in my life : they nurture my curiosity, my drive for self-improvement, and my open-mindedness.",
+    "yearsExperience": "Years of experience",
+    "available": "Available",
     "points": {
       "fullstack": {
         "title": "Full-Stack Development",
@@ -134,7 +136,6 @@
       "description": "I'm always interested in new projects and opportunities. Feel free to contact me to discuss your project.",
       "email": "Email",
       "location": "Location",
-      "availability": "Availability",
       "response": "Response within 24h",
       "social": "Social networks"
     },

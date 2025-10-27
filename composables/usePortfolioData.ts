@@ -3,8 +3,6 @@ import type { Project, Skill, Experience, Education, PersonalInfo, SocialLink } 
 export const usePortfolioData = () => {
   const personalInfo: PersonalInfo = {
     name: 'Olivier Recher',
-    title: 'Développeur Full-Stack',
-    subtitle: 'Créateur d\'expériences web modernes',
     location: 'France',
     email: 'recher.olivier@outlook.fr',
     avatar: '/images/avatar.jpeg',

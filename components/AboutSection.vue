@@ -15,13 +15,13 @@
           <div class="space-y-6">
             <div>
               <h3 class="text-2xl font-semibold mb-4 text-gray-900 dark:text-white">
-                {{ personalInfo.subtitle }}
+                {{ $t('about.subtitle') }}
               </h3>
               <p class="text-lg text-gray-600 dark:text-gray-300 leading-relaxed mb-6">
-                TODO: rewrite this
+                {{ $t('about.description') }}
               </p>
               <p class="text-gray-600 dark:text-gray-300 leading-relaxed">
-                TODO: rewrite this
+                {{ $t('about.hobbies') }}
               </p>
             </div>
 
@@ -35,6 +35,18 @@
                   <h4 class="font-semibold text-gray-900 dark:text-white mb-1">{{ $t('about.points.fullstack.title') }}</h4>
                   <p class="text-sm text-gray-600 dark:text-gray-300">
                     {{ $t('about.points.fullstack.description') }}
+                  </p>
+                </div>
+              </div>
+
+              <div class="flex items-start space-x-3">
+                <div class="w-8 h-8 bg-orange-500 rounded-full flex items-center justify-center flex-shrink-0 mt-1">
+                  <UIcon name="i-heroicons-academic-cap" class="w-4 h-4 text-white" />
+                </div>
+                <div>
+                  <h4 class="font-semibold text-gray-900 dark:text-white mb-1">{{ $t('about.points.learning.title') }}</h4>
+                  <p class="text-sm text-gray-600 dark:text-gray-300">
+                    {{ $t('about.points.learning.description') }}
                   </p>
                 </div>
               </div>
@@ -59,18 +71,6 @@
                   <h4 class="font-semibold text-gray-900 dark:text-white mb-1">{{ $t('about.points.performance.title') }}</h4>
                   <p class="text-sm text-gray-600 dark:text-gray-300">
                     {{ $t('about.points.performance.description') }}
-                  </p>
-                </div>
-              </div>
-
-              <div class="flex items-start space-x-3">
-                <div class="w-8 h-8 bg-orange-500 rounded-full flex items-center justify-center flex-shrink-0 mt-1">
-                  <UIcon name="i-heroicons-academic-cap" class="w-4 h-4 text-white" />
-                </div>
-                <div>
-                  <h4 class="font-semibold text-gray-900 dark:text-white mb-1">{{ $t('about.points.learning.title') }}</h4>
-                  <p class="text-sm text-gray-600 dark:text-gray-300">
-                    {{ $t('about.points.learning.description') }}
                   </p>
                 </div>
               </div>
@@ -120,14 +120,16 @@
             <div class="absolute top-8 -left-8 bg-white dark:bg-gray-800 p-4 rounded-lg shadow-lg z-20">
               <div class="flex items-center space-x-2">
                 <div class="w-3 h-3 bg-green-500 rounded-full"></div>
-                <span class="text-sm font-medium text-gray-900 dark:text-white">Disponible</span>
+                <span class="text-sm font-medium text-gray-900 dark:text-white">
+                  {{ $t('about.available') }}
+                </span>
               </div>
             </div>
             
             <div class="absolute bottom-8 -right-8 bg-white dark:bg-gray-800 p-4 rounded-lg shadow-lg z-20">
               <div class="text-center">
                 <div class="text-2xl font-bold text-blue-500">4+</div>
-                <div class="text-xs text-gray-600 dark:text-gray-300">Années d'expérience</div>
+                <div class="text-xs text-gray-600 dark:text-gray-300">{{ $t('about.yearsExperience') }}</div>
               </div>
             </div>
           </div>
