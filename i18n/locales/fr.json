@@ -91,24 +91,22 @@
     "title": "Expérience",
     "subtitle": "Mon parcours professionnel et mes réalisations",
     "items": {
-      "1": {
-        "id": "1",
+      "finvens": {
         "company": "Finvens",
-        "position": "Développeur Full-Stack Senior",
+        "position": "Apprenti Développeur Full-Stack",
         "startDate": "2023-09",
         "current": true,
         "description": [
           "Migration d'une application critique (200+ utilisateurs quotidiens) de PHP 5 legacy vers Symfony",
           "Optimisation des modèles de données et refonte des fonctionnalités, améliorant les performances et la maintenabilité",
-          "Collaboration avec les équipes (Produit, QA, Support) dans un contexte Agile"
+          "Collaboration avec les équipes (Produit, Développement, Support) dans un contexte Agile"
         ],
         "technologies": ["Symfony", "Vue.js", "Nuxt.js", "PHP", "TypeScript", "Docker", "AWS", "REST API", "Tailwind CSS"],
         "location": "Toulouse, France"
       },
-      "2": {
-        "id": "2",
+      "sopra-steria": {
         "company": "Sopra Steria",
-        "position": "Développeur Frontend",
+        "position": "Apprenti Développeur Full-Stack",
         "startDate": "2022-09",
         "endDate": "2023-08",
         "current": false,
