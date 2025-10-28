@@ -120,7 +120,25 @@
       }
     },
     "education": {
-      "title": "Formation"
+      "title": "Formation",
+      "items": {
+        "1": {
+          "institution": "Université Toulouse 2 Blagnac",
+          "degree": "Bachelor",
+          "field": "Informatique, Développement",
+          "startDate": "2021",
+          "endDate": "2024",
+          "description": "Apprentissage du développement et montée en compétences techniques et professionnelles en entreprise."
+        },
+        "2": {
+          "institution": "École nationale supérieure des mines d'Alès",
+          "degree": "École d'ingénieur",
+          "field": "Informatique, Développement et Réseaux",
+          "startDate": "2024",
+          "endDate": "2027",
+          "description": "Formation d’ingénieur permettant dedépasser la simple exécution technique pour adopter une véritable posture d’ingénieur : réfléchir, concevoir et agir avec méthode et responsabilité."
+        }
+      }
     },
     "current": "Actuel",
     "present": "Actuel",
@@ -184,25 +202,5 @@
     "view": "Voir",
     "download": "Télécharger",
     "learnMore": "En savoir plus"
-  },
-  "education": [
-    {
-      "id": "1",
-      "institution": "École nationale supérieure des mines d'Alès",
-      "degree": "École d'ingénieur",
-      "field": "Informatique, Développement et Réseaux",
-      "startDate": "2024",
-      "endDate": "2027",
-      "description": "Spécialisation en développement web et technologies émergentes"
-    },
-    {
-      "id": "2",
-      "institution": "Université Toulouse 2 Blagnac",
-      "degree": "Licence",
-      "field": "Informatique",
-      "startDate": "2015",
-      "endDate": "2018",
-      "description": "Spécialisation en développement web et technologies émergentes"
-    }
-  ]
+  }
 }

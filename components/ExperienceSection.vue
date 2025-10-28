@@ -158,11 +158,9 @@
           <h3 class="text-3xl font-bold text-center mb-12 text-gray-900 dark:text-white">
             {{ $t('experience.education.title') }}
           </h3>
-          
+          <!-- Engineering School -->
           <div class="grid md:grid-cols-2 gap-8">
             <div
-              v-for="edu in education"
-              :key="edu.id"
               class="bg-gray-50 dark:bg-gray-700 rounded-2xl p-6 hover:shadow-lg transition-shadow duration-300"
             >
               <div class="flex items-start space-x-4">
@@ -171,16 +169,41 @@
                 </div>
                 <div class="flex-1">
                   <h4 class="text-lg font-bold text-gray-900 dark:text-white mb-1">
-                    {{ edu.degree }} - {{ edu.field }}
+                    {{ $t('experience.education.items.1.degree') }} - {{ $t('experience.education.items.1.field') }}
                   </h4>
                   <h5 class="text-base font-semibold text-purple-600 dark:text-purple-400 mb-2">
-                    {{ edu.institution }}
+                    {{ $t('experience.education.items.1.institution') }}
                   </h5>
                   <div class="text-sm text-gray-500 dark:text-gray-400 mb-2">
-                    {{ edu.startDate }} - {{ edu.endDate }}
+                    {{ $t('experience.education.items.1.startDate') }} - {{ $t('experience.education.items.1.endDate') }}
                   </div>
-                  <p v-if="edu.description" class="text-sm text-gray-600 dark:text-gray-300">
-                    {{ edu.description }}
+                  <p v-if="$t('experience.education.items.1.description')" class="text-sm text-gray-600 dark:text-gray-300">
+                    {{ $t('experience.education.items.1.description') }}
+                  </p>
+                </div>
+              </div>
+            </div>
+            
+            <!-- University -->
+            <div
+              class="bg-gray-50 dark:bg-gray-700 rounded-2xl p-6 hover:shadow-lg transition-shadow duration-300"
+            >
+              <div class="flex items-start space-x-4">
+                <div class="w-12 h-12 bg-gradient-to-br from-purple-500 to-pink-500 rounded-full flex items-center justify-center flex-shrink-0">
+                  <UIcon name="i-heroicons-academic-cap" class="w-6 h-6 text-white" />
+                </div>
+                <div class="flex-1">
+                  <h4 class="text-lg font-bold text-gray-900 dark:text-white mb-1">
+                    {{ $t('experience.education.items.2.degree') }} - {{ $t('experience.education.items.2.field') }}
+                  </h4>
+                  <h5 class="text-base font-semibold text-purple-600 dark:text-purple-400 mb-2">
+                    {{ $t('experience.education.items.2.institution') }}
+                  </h5>
+                  <div class="text-sm text-gray-500 dark:text-gray-400 mb-2">
+                    {{ $t('experience.education.items.2.startDate') }} - {{ $t('experience.education.items.2.endDate') }}
+                  </div>
+                  <p v-if="$t('experience.education.items.2.description')" class="text-sm text-gray-600 dark:text-gray-300">
+                    {{ $t('experience.education.items.2.description') }}
                   </p>
                 </div>
               </div>

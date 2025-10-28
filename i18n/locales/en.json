@@ -120,7 +120,25 @@
       }
     },
     "education": {
-      "title": "Education"
+      "title": "Education",
+      "items": {
+      "1": {
+        "institution": "Université Toulouse 2 Blagnac",
+        "degree": "Bachelor",
+        "field": "Computer Science, Development",
+        "startDate": "2021",
+        "endDate": "2024",
+        "description": "Learning development and building technical and professional skills in a company environment."
+      },
+      "2": {
+        "institution": "École nationale supérieure des mines d'Alès",
+        "degree": "Engineering School",
+        "field": "Computer Science, Development and Networks",
+        "startDate": "2024",
+        "endDate": "2027",
+         "description": "Engineering education that goes beyond simple technical execution to adopt a true engineering mindset: thinking, designing and acting with method and responsibility."
+      }
+    }
     },
     "current": "Current",
     "present": "Present",
@@ -184,25 +202,5 @@
     "view": "View",
     "download": "Download",
     "learnMore": "Learn more"
-  },
-  "education": [
-    {
-      "id": "1",
-      "institution": "École nationale supérieure des mines d'Alès",
-      "degree": "Engineering School",
-      "field": "Computer Science, Development and Networks",
-      "startDate": "2024",
-      "endDate": "2027",
-      "description": "Specialization in web development and emerging technologies"
-    },
-    {
-      "id": "2",
-      "institution": "Université Toulouse 2 Blagnac",
-      "degree": "Bachelor",
-      "field": "Computer Science",
-      "startDate": "2015",
-      "endDate": "2018",
-      "description": "Specialization in web development and emerging technologies"
-    }
-  ]
+  }
 }
