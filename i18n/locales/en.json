@@ -1,0 +1,252 @@
+{
+  "nav": {
+    "about": "About",
+    "skills": "Skills",
+    "projects": "Projects",
+    "experience": "Experience",
+    "contact": "Contact"
+  },
+  "hero": {
+    "title": "Engineer - Full-Stack Developer",
+    "description": "Passionate about web development and innovative technologies, I create performant applications and exceptional user experiences.",
+    "cta": {
+      "projects": "View my projects",
+      "contact": "Contact me"
+    }
+  },
+  "about": {
+    "title": "About",
+    "subtitle": "Designing the future of the web",
+    "description": "I am a French apprentice in my second year of engineering school, with four years of experience as a web developer. Currently looking for a 9-week internship abroad to gain practical experience and enhance my skills. I enjoy collaborating with others, learning new technologies, and tackling challenges with a proactive mindset.",
+    "hobbies": "Sports and travel play an important role in my life : they nurture my curiosity, my drive for self-improvement, and my open-mindedness.",
+    "yearsExperience": "Years of experience",
+    "available": "Available",
+    "points": {
+      "fullstack": {
+        "title": "Full-Stack Development",
+        "description": "Expertise in frontend and backend with modern technologies"
+      },
+      "design": {
+        "title": "Design & UX",
+        "description": "Artistic sensibility and focus on user experience"
+      },
+      "performance": {
+        "title": "Performance",
+        "description": "Optimization and production deployment of scalable applications"
+      },
+      "learning": {
+        "title": "Continuous Learning",
+        "description": "Constant technological watch and continuous learning"
+      }
+    },
+    "cta": {
+      "resume": "Download CV",
+      "contact": "Contact me"
+    }
+  },
+  "skills": {
+    "title": "Skills",
+    "subtitle": "Technologies and tools I use to create modern and performant solutions",
+    "categories": {
+      "frontend": "Frontend",
+      "backend": "Backend",
+      "tools": "Tools & DevOps"
+    }
+  },
+  "projects": {
+    "title": "Projects",
+    "subtitle": "Discover my recent achievements and the technologies I use",
+    "filters": {
+      "all": "All",
+      "web": "Web",
+      "mobile": "Mobile",
+      "other": "Others"
+    },
+    "actions": {
+      "details": "Details",
+      "code": "Code",
+      "demo": "Demo"
+    },
+    "featured": "Featured project",
+    "items": {
+      "1": {
+        "title": "Doodle Jump - Autopilot AI",
+        "description": "Doodle Jump from scratch, creating an AI model for automatic navigation.",
+        "longDescription": "Doodle Jump from scratch, creating an AI model for automatic navigation.",
+        "technologies": ["TypeScript", "Genetic Algorithms", "MVC Model", "Tailwind CSS"]
+      },
+      "2": {
+        "title": "PWA Application - Prevention",
+        "description": "Alcohol consumption prevention. Blood alcohol level simulation. Avoid driving under the influence.",
+        "longDescription": "PWA application for alcohol consumption prevention, with blood alcohol level simulation.",
+        "technologies": ["Nuxt.js", "Vue.js", "Tailwind CSS", "LocalStorage"]
+      },
+      "3": {
+        "title": "Mobile Application - Pomodoro",
+        "description": "Mobile application for productivity management, scheduling and music.",
+        "longDescription": "Mobile application for productivity management, scheduling and music.",
+        "technologies": ["Flutter", "Dart"]
+      }
+    }
+  },
+  "experience": {
+    "title": "Experience",
+    "subtitle": "My professional journey and achievements",
+    "items": {
+      "finvens": {
+        "company": "Finvens",
+        "position": "Apprentice Full-Stack Developer",
+        "startDate": "2023-09",
+        "current": true,
+        "description": [
+          "Migrated a business-critical application (200+ daily users) from legacy PHP 5 to Symfony",
+          "Optimized data models and led feature redesigns, improving performance and maintainability",
+          "Collaborated with teams (Product, Development, Support) in Agile context"
+        ],
+        "technologies": ["Symfony", "Vue.js", "Nuxt.js", "PHP", "TypeScript", "Docker", "AWS", "REST API", "Tailwind CSS"],
+        "location": "Toulouse, France"
+      },
+      "sopra-steria": {
+        "company": "Sopra Steria",
+        "position": "Apprentice Full-Stack Developer",
+        "startDate": "2022-09",
+        "endDate": "2023-08",
+        "current": false,
+        "description": [
+          "Designed and deployed a custom ERP used daily by 80+ employees across 10 teams",
+          "Built web-based management tools for schedules, meetings, and paid leave",
+          "Directed the full project lifecycle: requirements analysis, UI/UX design, database architecture, and implementation"
+        ],
+        "technologies": ["JavaScript", "PHP", "MySQL", "Tailwind CSS", "UI/UX"],
+        "location": "Toulouse, France"
+      }
+    },
+    "education": {
+      "title": "Education",
+      "items": {
+      "1": {
+        "institution": "Université Toulouse 2 Blagnac",
+        "degree": "Bachelor",
+        "field": "Computer Science, Development",
+        "startDate": "2021",
+        "endDate": "2024",
+        "description": "Learning development and building technical and professional skills in a company environment."
+      },
+      "2": {
+        "institution": "École nationale supérieure des mines d'Alès",
+        "degree": "Engineering School",
+        "field": "Computer Science, Development and Networks",
+        "startDate": "2024",
+        "endDate": "2027",
+         "description": "Engineering education that goes beyond simple technical execution to adopt a true engineering mindset: thinking, designing and acting with method and responsibility."
+      }
+    }
+    },
+    "current": "Current",
+    "present": "Present",
+    "technologies": "Technologies"
+  },
+  "contact": {
+    "title": "Contact",
+    "subtitle": "Have a project idea? Don't hesitate to contact me!",
+    "info": {
+      "title": "Let's stay in touch",
+      "description": "I'm always interested in new projects and opportunities. Feel free to contact me to discuss your project.",
+      "email": "Email",
+      "location": "Location",
+      "response": "Response within 24h",
+      "social": "Social networks"
+    },
+    "form": {
+      "title": "Send me a message",
+      "fields": {
+        "name": "Full name",
+        "email": "Email",
+        "subject": "Subject",
+        "message": "Message"
+      },
+      "placeholders": {
+        "name": "Your name",
+        "subject": "Subject of your message",
+        "message": "Describe your project or request..."
+      },
+      "submit": "Send message",
+      "sending": "Sending...",
+      "success": {
+        "title": "Message sent!",
+        "description": "Thank you for your message. I will respond as soon as possible."
+      },
+      "error": {
+        "title": "Error",
+        "description": "An error occurred while sending the message. Please try again."
+      }
+    }
+  },
+  "footer": {
+    "navigation": "Navigation",
+    "contact": "Contact",
+    "copyright": "All rights reserved.",
+    "backToTop": "Back to top",
+    "legalMentions": "Legal notices",
+    "links": {
+      "about": "About",
+      "skills": "Skills",
+      "projects": "Projects",
+      "experience": "Experience",
+      "contact": "Contact"
+    }
+  },
+  "legal": {
+    "title": "Legal notices",
+    "sections": {
+      "editor": {
+        "title": "Site editor",
+        "name": "Olivier Recher",
+        "address": "572 chemin du Viget, 30100 Alès, France",
+        "phone": "+33 6 19 01 36 44"
+      },
+      "hosting": {
+        "title": "Hosting",
+        "provider": "Vercel Inc.",
+        "address": "340 S Lemon Ave #4133, Walnut, CA 91789, United States",
+        "website": "https://vercel.com"
+      },
+      "director": {
+        "title": "Publication director",
+        "name": "Olivier Recher"
+      },
+      "dataProtection": {
+        "title": "Personal data protection",
+        "description": "No personal data is collected on this website. This is a personal portfolio website that does not collect, store or process any personal data from visitors.",
+        "rights": "In accordance with the General Data Protection Regulation (GDPR), you have the right to access, rectification, deletion, limitation, opposition and portability of your personal data. For any request regarding your personal data, you can contact us at the e-mail address indicated in the legal notices."
+      },
+      "cookies": {
+        "title": "Cookies",
+        "description": "This website does not use cookies. No tracking, analytics or preference cookies are placed on your device during your visit."
+      },
+      "intellectualProperty": {
+        "title": "Intellectual property",
+        "description": "All elements contained on this website (texts, images, logos, source code) are the exclusive property of Olivier Recher and are protected by intellectual property laws. Any reproduction, representation, modification, publication, adaptation of all or part of the site's elements, regardless of the means or process used, is prohibited without prior written authorization from Olivier Recher."
+      },
+      "liability": {
+        "title": "Limitation of liability",
+        "description": "The site editor strives to provide information on the site as accurate as possible. However, it cannot be held responsible for omissions, inaccuracies and deficiencies in the update, whether they are its fault or that of third-party partners who provide this information. All information indicated on the site is given for information purposes only, and is likely to evolve. Furthermore, the information appearing on the site is not exhaustive."
+      },
+      "externalLinks": {
+        "title": "External links",
+        "description": "This website may contain links to other websites. The site editor is not responsible for the content, privacy practices or policies of external sites to which links are provided. The presence of links to other sites does not constitute approval or recommendation of these sites or their content."
+      }
+    }
+  },
+  "common": {
+    "loading": "Loading...",
+    "error": "Error",
+    "success": "Success",
+    "close": "Close",
+    "open": "Open",
+    "view": "View",
+    "download": "Download",
+    "learnMore": "Learn more",
+    "backToHome": "Back to home"
+  }
+}

@@ -1,12 +1,44 @@
 <script setup lang="ts">
-const name = "Olivier Recher";
+useSeoMeta({
+  title: 'Olivier Recher - Développeur Full-Stack',
+  ogTitle: 'Olivier Recher - Développeur Full-Stack',
+  description: 'Portfolio de développeur full-stack spécialisé en Vue.js, TypeScript et Three.js. Découvrez mes projets et compétences.',
+  ogDescription: 'Portfolio de développeur full-stack spécialisé en Vue.js, TypeScript et Three.js. Découvrez mes projets et compétences.',
+  ogImage: '/images/og-image.jpg',
+})
+
+//TODO: use performance optimizations
+const { isLowEndDevice, prefersReducedMotion } = usePerformance()
 </script>
 
 <template>
-  <div class="flex flex-col items-center justify-center min-h-screen dark:bg-gray-900 text-gray-900 dark:text-white">
-    <h1 class="text-xl font-bold">Hello ! I am <span>{{ name }}</span></h1>
-    <h2 class="text-center text-6xl sm:text-9xl font-bold">Full-stack</h2>
-    <h2 class="text-center text-6xl sm:text-9xl font-bold text-[#6200ee] dark:text-[#bb86FC]">Developer</h2>
-    <skill-ticker />
+  <div class="min-h-screen">
+    <NavigationBar />
+    
+    <AnimatedSection animation="fadeInUp">
+      <HeroSection />
+    </AnimatedSection>
+    
+    <AnimatedSection animation="fadeInUp" :delay="0.2">
+      <AboutSection />
+    </AnimatedSection>
+    
+    <AnimatedSection animation="fadeInUp" :delay="0.4">
+      <SkillsSection />
+    </AnimatedSection>
+    
+    <AnimatedSection animation="fadeInUp" :delay="0.6">
+      <ProjectsSection />
+    </AnimatedSection>
+    
+    <AnimatedSection animation="fadeInUp" :delay="0.8">
+      <ExperienceSection />
+    </AnimatedSection>
+    
+    <AnimatedSection animation="fadeInUp" :delay="1.0">
+      <ContactSection />
+    </AnimatedSection>
+    
+    <FooterSection />
   </div>
 </template>

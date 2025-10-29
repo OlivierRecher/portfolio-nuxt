@@ -1,0 +1,252 @@
+{
+  "nav": {
+    "about": "À Propos",
+    "skills": "Compétences",
+    "projects": "Projets",
+    "experience": "Expérience",
+    "contact": "Contact"
+  },
+  "hero": {
+    "title": "Ingénieur - Développeur Full-Stack",
+    "description": "Passionné par le développement web, je prends a coeur le développement de solutions robustes et pertinente centré sur l'expérience utilisateur.",
+    "cta": {
+      "projects": "Voir mes projets",
+      "contact": "Me contacter"
+    }
+  },
+  "about": {
+    "title": "À Propos",
+    "subtitle": "Concevoir et bâtir le web de demain",
+    "description": "Je suis un apprenti français en deuxième année d'école d'ingénieur, avec quatre années d'expérience en tant que développeur web. Actuellement à la recherche d'un stage de 9 semaines à l'étranger pour acquérir une expérience pratique et améliorer mes compétences. J'aime collaborer avec les autres, apprendre de nouvelles technologies et relever des défis avec un état d'esprit proactif.",
+    "hobbies": "Le sport et les voyages occupent une place importante dans ma vie : ils nourrissent ma curiosité, mon sens du dépassement et mon ouverture d’esprit.",
+    "yearsExperience": "Années d'expérience",
+    "available": "Disponible",
+    "points": {
+      "fullstack": {
+        "title": "Développement Full-Stack",
+        "description": "Expertise en frontend et backend avec les technologies modernes"
+      },
+      "design": {
+        "title": "Design & UX",
+        "description": "Sensibilité artistique et focus sur l'expérience utilisateur"
+      },
+      "performance": {
+        "title": "Performance",
+        "description": "Optimisation et mise en production d'applications scalables"
+      },
+      "learning": {
+        "title": "Formation Continue",
+        "description": "Veille technologique constante et apprentissage permanent"
+      }
+    },
+    "cta": {
+      "resume": "Télécharger CV",
+      "contact": "Me contacter"
+    }
+  },
+  "skills": {
+    "title": "Compétences",
+    "subtitle": "Technologies et outils que j'utilise pour créer des solutions modernes et performantes",
+    "categories": {
+      "frontend": "Frontend",
+      "backend": "Backend",
+      "tools": "Outils & DevOps"
+    }
+  },
+  "projects": {
+    "title": "Projets",
+    "subtitle": "Découvrez mes réalisations récentes et les technologies que j'utilise",
+    "filters": {
+      "all": "Tous",
+      "web": "Web",
+      "mobile": "Mobile",
+      "other": "Autres"
+    },
+    "actions": {
+      "details": "Détails",
+      "code": "Code",
+      "demo": "Demo"
+    },
+    "featured": "Projet phare",
+    "items": {
+      "1": {
+        "title": "Doodle Jump - Autopilot AI",
+        "description": "Doodle Jump à partir de zéro, création d'un modèle AI pour la navigation automatique.",
+        "longDescription": "Doodle Jump à partir de zéro, création d'un modèle AI pour la navigation automatique.",
+        "technologies": ["TypeScript", "Algo génétiques", "Modèle MVC", "Tailwind CSS"]
+      },
+      "2": {
+        "title": "Application PWA - Prévention",
+        "description": "Prévention de la consommation d'alcool. Simulation du taux d'alcoolémie. Eviter la conduite en état d'ivresse.",
+        "longDescription": "Application PWA pour la prévention de consommation d'alcool, avec simulation du taux d'alcoolémie.",
+        "technologies": ["Nuxt.js", "Vue.js", "Tailwind CSS", "LocalStorage"]
+      },
+      "3": {
+        "title": "Application mobile - Pomodoro",
+        "description": "Application mobile pour la gestion de la productivité, d'un planning et de la musique.",
+        "longDescription": "Application mobile pour la gestion de la productivité, d'un planning et de la musique.",
+        "technologies": ["Flutter", "Dart"]
+      }
+    }
+  },
+  "experience": {
+    "title": "Expérience",
+    "subtitle": "Mon parcours professionnel et mes réalisations",
+    "items": {
+      "finvens": {
+        "company": "Finvens",
+        "position": "Apprenti Développeur Full-Stack",
+        "startDate": "2023-09",
+        "current": true,
+        "description": [
+          "Migration d'une application critique (200+ utilisateurs quotidiens) de PHP 5 legacy vers Symfony",
+          "Optimisation des modèles de données et refonte des fonctionnalités, améliorant les performances et la maintenabilité",
+          "Collaboration avec les équipes (Produit, Développement, Support) dans un contexte Agile"
+        ],
+        "technologies": ["Symfony", "Vue.js", "Nuxt.js", "PHP", "TypeScript", "Docker", "AWS", "REST API", "Tailwind CSS"],
+        "location": "Toulouse, France"
+      },
+      "sopra-steria": {
+        "company": "Sopra Steria",
+        "position": "Apprenti Développeur Full-Stack",
+        "startDate": "2022-09",
+        "endDate": "2023-08",
+        "current": false,
+        "description": [
+          "Conception et déploiement d'un ERP personnalisé utilisé quotidiennement par 80+ employés dans 10 équipes",
+          "Développement d'outils de gestion web pour les plannings, réunions et congés payés",
+          "Direction du cycle de vie complet du projet : analyse des besoins, design UI/UX, architecture de base de données et implémentation"
+        ],
+        "technologies": ["JavaScript", "PHP", "MySQL", "Tailwind CSS", "UI/UX"],
+        "location": "Toulouse, France"
+      }
+    },
+    "education": {
+      "title": "Formation",
+      "items": {
+        "1": {
+          "institution": "Université Toulouse 2 Blagnac",
+          "degree": "Bachelor",
+          "field": "Informatique, Développement",
+          "startDate": "2021",
+          "endDate": "2024",
+          "description": "Apprentissage du développement et montée en compétences techniques et professionnelles en entreprise."
+        },
+        "2": {
+          "institution": "École nationale supérieure des mines d'Alès",
+          "degree": "École d'ingénieur",
+          "field": "Informatique, Développement et Réseaux",
+          "startDate": "2024",
+          "endDate": "2027",
+          "description": "Formation d’ingénieur permettant dedépasser la simple exécution technique pour adopter une véritable posture d’ingénieur : réfléchir, concevoir et agir avec méthode et responsabilité."
+        }
+      }
+    },
+    "current": "Actuel",
+    "present": "Actuel",
+    "technologies": "Technologies"
+  },
+  "contact": {
+    "title": "Contact",
+    "subtitle": "Une idée de projet ? N'hésitez pas à me contacter !",
+    "info": {
+      "title": "Restons en contact",
+      "description": "Je suis toujours intéressé par de nouveaux projets et opportunités. N'hésitez pas à me contacter pour discuter de votre projet.",
+      "email": "Email",
+      "location": "Localisation",
+      "response": "Réponse sous 24h",
+      "social": "Réseaux sociaux"
+    },
+    "form": {
+      "title": "Envoyez-moi un message",
+      "fields": {
+        "name": "Nom complet",
+        "email": "Email",
+        "subject": "Sujet",
+        "message": "Message"
+      },
+      "placeholders": {
+        "name": "Votre nom",
+        "subject": "Sujet de votre message",
+        "message": "Décrivez votre projet ou votre demande..."
+      },
+      "submit": "Envoyer le message",
+      "sending": "Envoi en cours...",
+      "success": {
+        "title": "Message envoyé !",
+        "description": "Merci pour votre message. Je vous répondrai dans les plus brefs délais."
+      },
+      "error": {
+        "title": "Erreur",
+        "description": "Une erreur est survenue lors de l'envoi du message. Veuillez réessayer."
+      }
+    }
+  },
+  "footer": {
+    "navigation": "Navigation",
+    "contact": "Contact",
+    "copyright": "Tous droits réservés.",
+    "backToTop": "Retour en haut",
+    "legalMentions": "Mentions légales",
+    "links": {
+      "about": "À Propos",
+      "skills": "Compétences",
+      "projects": "Projets",
+      "experience": "Expérience",
+      "contact": "Contact"
+    }
+  },
+  "legal": {
+    "title": "Mentions légales",
+    "sections": {
+      "editor": {
+        "title": "Éditeur du site",
+        "name": "Olivier Recher",
+        "address": "572 chemin du Viget, 30100 Alès, France",
+        "phone": "+33 6 19 01 36 44"
+      },
+      "hosting": {
+        "title": "Hébergement",
+        "provider": "Vercel Inc.",
+        "address": "340 S Lemon Ave #4133, Walnut, CA 91789, États-Unis",
+        "website": "https://vercel.com"
+      },
+      "director": {
+        "title": "Directeur de publication",
+        "name": "Olivier Recher"
+      },
+      "dataProtection": {
+        "title": "Protection des données personnelles",
+        "description": "Aucune donnée personnelle n'est collectée sur ce site. Ce site est un portfolio personnel qui ne collecte, ne stocke ni ne traite aucune donnée personnelle des visiteurs.",
+        "rights": "Conformément au Règlement Général sur la Protection des Données (RGPD), vous disposez d'un droit d'accès, de rectification, de suppression, de limitation, d'opposition et de portabilité sur vos données personnelles. Pour toute demande concernant vos données personnelles, vous pouvez nous contacter à l'adresse e-mail indiquée dans les mentions légales."
+      },
+      "cookies": {
+        "title": "Cookies",
+        "description": "Ce site n'utilise pas de cookies. Aucun cookie de tracking, d'analyse ou de préférences n'est déposé sur votre terminal lors de votre visite."
+      },
+      "intellectualProperty": {
+        "title": "Propriété intellectuelle",
+        "description": "L'ensemble des éléments contenus sur ce site (textes, images, logos, code source) est la propriété exclusive d'Olivier Recher et est protégé par les lois relatives à la propriété intellectuelle. Toute reproduction, représentation, modification, publication, adaptation de tout ou partie des éléments du site, quel que soit le moyen ou le procédé utilisé, est interdite sans autorisation écrite préalable d'Olivier Recher."
+      },
+      "liability": {
+        "title": "Limitation de responsabilité",
+        "description": "L'éditeur du site s'efforce de fournir sur le site des informations aussi précises que possible. Toutefois, il ne pourra être tenu responsable des omissions, des inexactitudes et des carences dans la mise à jour, qu'elles soient de son fait ou du fait des tiers partenaires qui lui fournissent ces informations. Tous les informations indiquées sur le site sont données à titre indicatif, et sont susceptibles d'évoluer. Par ailleurs, les renseignements figurant sur le site ne sont pas exhaustifs."
+      },
+      "externalLinks": {
+        "title": "Liens externes",
+        "description": "Ce site peut contenir des liens vers d'autres sites web. L'éditeur du site n'est pas responsable du contenu, des pratiques de confidentialité ou des politiques des sites externes vers lesquels des liens sont proposés. La présence de liens vers d'autres sites ne constitue pas une approbation ou une recommandation de ces sites ou de leur contenu."
+      }
+    }
+  },
+  "common": {
+    "loading": "Chargement...",
+    "error": "Erreur",
+    "success": "Succès",
+    "close": "Fermer",
+    "open": "Ouvrir",
+    "view": "Voir",
+    "download": "Télécharger",
+    "learnMore": "En savoir plus",
+    "backToHome": "Retour à l'accueil"
+  }
+}

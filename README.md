@@ -1,75 +1,51 @@
-# Nuxt Minimal Starter
+# Portfolio Développeur Full-Stack
 
-Look at the [Nuxt documentation](https://nuxt.com/docs/getting-started/introduction) to learn more.
+Un portfolio développé avec Nuxt 3, TypeScript et Tailwind CSS.
 
-## Setup
-
-Make sure to install dependencies:
+## 📦 Installation
 
 ```bash
-# npm
-npm install
+git clone <repository-url>
+cd portfolio-nuxt
 
-# pnpm
 pnpm install
 
-# yarn
-yarn install
-
-# bun
-bun install
-```
-
-## Development Server
-
-Start the development server on `http://localhost:3000`:
-
-```bash
-# npm
-npm run dev
-
-# pnpm
 pnpm dev
-
-# yarn
-yarn dev
-
-# bun
-bun run dev
 ```
 
-## Production
+## 🔧 Configuration
 
-Build the application for production:
+### Variables d'environnement
+
+Créez un fichier `.env` à la racine du projet :
+
+```env
+EMAILJS_SERVICE_ID=your_service_id
+EMAILJS_TEMPLATE_ID=your_template_id
+EMAILJS_PUBLIC_KEY=your_public_key
+```
+
+### Configuration EmailJS
+
+1. Créez un compte sur [EmailJS](https://www.emailjs.com/)
+2. Configurez un service email
+3. Créez un template
+4. Ajoutez les variables d'environnement
+
+### Build manuel
 
 ```bash
-# npm
-npm run build
-
-# pnpm
 pnpm build
 
-# yarn
-yarn build
-
-# bun
-bun run build
-```
-
-Locally preview production build:
-
-```bash
-# npm
-npm run preview
-
-# pnpm
 pnpm preview
-
-# yarn
-yarn preview
-
-# bun
-bun run preview
 ```
 
-Check out the [deployment documentation](https://nuxt.com/docs/getting-started/deployment) for more information.
+## 📞 Contact
+
+- **Email** : recher.olivier@outlook.fr
+- **GitHub** : [@olivierrecher](https://github.com/olivierrecher)
+- **LinkedIn** : [Olivier Recher](https://www.linkedin.com/in/olivier-recher)
+
+---
+
+Développé avec ❤️ par Olivier Recher
