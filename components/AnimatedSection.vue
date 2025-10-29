@@ -12,7 +12,7 @@ interface Props {
 const props = withDefaults(defineProps<Props>(), {
   animation: 'fadeInUp',
   delay: 0,
-  duration: 0.6,
+  duration: 0.4,
   threshold: 0.1
 })
 
@@ -68,7 +68,7 @@ onUnmounted(() => {
 .animated-section {
   opacity: 0;
   transform: translateY(30px);
-  transition: all 0.6s ease-out;
+  transition: all 0.4s ease-out;
 }
 
 .animated-section.animate-on-scroll {

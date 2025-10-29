@@ -92,39 +92,37 @@
               :state="form"
               :schema="schema"
               @submit="onSubmit"
-              class="space-y-6"
+              class="space-y-6 w-full flex flex-col justify-between"
             >
-              <UFormGroup :label="$t('contact.form.fields.name')" name="name" required>
+              <UFormGroup :label="$t('contact.form.fields.name')" name="name" class="w-full flex flex-col md:flex-row gap-4" required>
                 <UInput
                   v-model="form.name"
                   :placeholder="$t('contact.form.placeholders.name')"
                   size="lg"
+                  class="flex-1"
                 />
-              </UFormGroup>
-
-              <UFormGroup :label="$t('contact.form.fields.email')" name="email" required>
                 <UInput
                   v-model="form.email"
                   type="email"
-                  placeholder="votre@email.com"
+                  placeholder="@email.com"
                   size="lg"
+                  class="flex-1"
                 />
               </UFormGroup>
 
-              <UFormGroup :label="$t('contact.form.fields.subject')" name="subject" required>
+              <UFormGroup :label="$t('contact.form.fields.subject')" name="subject" class="w-full space-y-6" required>
                 <UInput
                   v-model="form.subject"
                   :placeholder="$t('contact.form.placeholders.subject')"
                   size="lg"
+                  class="w-full"
                 />
-              </UFormGroup>
-
-              <UFormGroup :label="$t('contact.form.fields.message')" name="message" required>
                 <UTextarea
                   v-model="form.message"
                   :placeholder="$t('contact.form.placeholders.message')"
                   :rows="5"
                   size="lg"
+                  class="w-full"
                 />
               </UFormGroup>
 
@@ -133,7 +131,7 @@
                 color="primary"
                 size="lg"
                 :loading="isSubmitting"
-                class="w-full gradient-button"
+                class="w-full gradient-button hover:cursor-pointer"
               >
                 <UIcon name="i-heroicons-paper-airplane" class="w-5 h-5 mr-2" />
                 {{ isSubmitting ? $t('contact.form.sending') : $t('contact.form.submit') }}
