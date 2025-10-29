@@ -69,20 +69,23 @@
     },
     "featured": "Featured project",
     "items": {
-      "portfolio": {
-        "title": "Interactive 3D Portfolio",
-        "description": "Modern portfolio with Three.js animations and clean design",
-        "longDescription": "A portfolio developed with Nuxt 3, TypeScript and Three.js, showcasing smooth animations and an immersive user experience."
+      "1": {
+        "title": "Doodle Jump - Autopilot AI",
+        "description": "Doodle Jump from scratch, creating an AI model for automatic navigation.",
+        "longDescription": "Doodle Jump from scratch, creating an AI model for automatic navigation.",
+        "technologies": ["TypeScript", "Genetic Algorithms", "MVC Model", "Tailwind CSS"]
       },
-      "ecommerce": {
-        "title": "Vue.js E-commerce",
-        "description": "Complete e-commerce platform with cart and payment",
-        "longDescription": "E-commerce application developed with Vue.js, including product management, cart, payment system and admin dashboard."
+      "2": {
+        "title": "PWA Application - Prevention",
+        "description": "Alcohol consumption prevention. Blood alcohol level simulation. Avoid driving under the influence.",
+        "longDescription": "PWA application for alcohol consumption prevention, with blood alcohol level simulation.",
+        "technologies": ["Nuxt.js", "Vue.js", "Tailwind CSS", "LocalStorage"]
       },
-      "dashboard": {
-        "title": "Analytics Dashboard",
-        "description": "Dashboard with real-time data visualizations",
-        "longDescription": "Interactive dashboard for data analysis with dynamic charts, advanced filters and report export."
+      "3": {
+        "title": "Mobile Application - Pomodoro",
+        "description": "Mobile application for productivity management, scheduling and music.",
+        "longDescription": "Mobile application for productivity management, scheduling and music.",
+        "technologies": ["Flutter", "Dart"]
       }
     }
   },

@@ -30,21 +30,21 @@
         <!-- Projects Grid -->
         <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
           <div
-            v-for="project in filteredProjects"
-            :key="project.id"
+            v-for="projectId in projectIds"
+            :key="projectId"
             class="group bg-white dark:bg-gray-800 rounded-2xl overflow-hidden shadow-lg hover:shadow-2xl transition-all duration-500 hover:-translate-y-2"
           >
             <!-- Project Image -->
             <div class="relative overflow-hidden">
               <img
-                :src="project.image"
-                :alt="project.title"
+                :src="projectMetadata[projectId].image"
+                :alt="$t(`projects.items.${projectId}.title`)"
                 class="w-full h-48 object-cover group-hover:scale-110 transition-transform duration-500"
               />
               <div class="absolute inset-0 bg-gradient-to-t from-black/60 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
               
               <!-- Featured Badge -->
-              <div v-if="project.featured" class="absolute top-4 left-4">
+              <div v-if="projectMetadata[projectId].featured" class="absolute top-4 left-4">
                 <span class="bg-gradient-to-r from-yellow-400 to-orange-500 text-white px-3 py-1 rounded-full text-sm font-semibold">
                   ⭐ {{ $t('projects.featured') }}
                 </span>
@@ -53,7 +53,7 @@
               <!-- Year Badge -->
               <div class="absolute top-4 right-4">
                 <span class="bg-white/90 dark:bg-gray-800/90 text-gray-900 dark:text-white px-3 py-1 rounded-full text-sm font-medium">
-                  {{ project.year }}
+                  {{ projectMetadata[projectId].year }}
                 </span>
               </div>
 
@@ -61,8 +61,8 @@
               <div class="absolute inset-0 bg-black/50 opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-center justify-center">
                 <div class="flex space-x-4">
                   <UButton
-                    v-if="project.githubUrl"
-                    :to="project.githubUrl"
+                    v-if="projectMetadata[projectId].githubUrl"
+                    :to="projectMetadata[projectId].githubUrl"
                     target="_blank"
                     color="neutral"
                     variant="solid"
@@ -73,13 +73,13 @@
                     {{ $t('projects.actions.code') }}
                   </UButton>
                   <UButton
-                    v-if="project.liveUrl"
-                    :to="project.liveUrl"
+                    v-if="projectMetadata[projectId].liveUrl"
+                    :to="projectMetadata[projectId].liveUrl"
                     target="_blank"
                     color="primary"
                     variant="solid"
                     size="lg"
-                    class="px-6"
+                    class="px-6 gradient-button"
                   >
                     <UIcon name="i-heroicons-arrow-top-right-on-square" class="w-5 h-5 mr-2" />
                     {{ $t('projects.actions.demo') }}
@@ -91,26 +91,26 @@
             <!-- Project Content -->
             <div class="p-6">
               <h3 class="text-xl font-bold text-gray-900 dark:text-white mb-2">
-                {{ project.title }}
+                {{ $t(`projects.items.${projectId}.title`) }}
               </h3>
               <p class="text-gray-600 dark:text-gray-300 mb-4 line-clamp-2">
-                {{ project.description }}
+                {{ $t(`projects.items.${projectId}.description`) }}
               </p>
 
               <!-- Technologies -->
               <div class="flex flex-wrap gap-2 mb-4">
                 <span
-                  v-for="tech in project.technologies.slice(0, 3)"
-                  :key="tech"
+                  v-for="(tech, techIndex) in getTechnologies(projectId).slice(0, 3)"
+                  :key="techIndex"
                   class="px-3 py-1 bg-gray-100 dark:bg-gray-700 text-gray-700 dark:text-gray-300 rounded-full text-sm"
                 >
                   {{ tech }}
                 </span>
                 <span
-                  v-if="project.technologies.length > 3"
+                  v-if="getTechnologies(projectId).length > 3"
                   class="px-3 py-1 bg-gray-100 dark:bg-gray-700 text-gray-700 dark:text-gray-300 rounded-full text-sm"
                 >
-                  +{{ project.technologies.length - 3 }}
+                  +{{ getTechnologies(projectId).length - 3 }}
                 </span>
               </div>
 
@@ -118,24 +118,24 @@
               <div class="flex justify-end items-center">
                 <div class="flex space-x-2">
                   <UButton
-                    v-if="project.githubUrl"
-                    :to="project.githubUrl"
+                    v-if="projectMetadata[projectId].githubUrl"
+                    :to="projectMetadata[projectId].githubUrl"
                     target="_blank"
                     color="neutral"
                     variant="ghost"
                     size="sm"
-                    :aria-label="`Voir le code de ${project.title}`"
+                    :aria-label="`${$t('projects.actions.code')} - ${$t(`projects.items.${projectId}.title`)}`"
                   >
                     <UIcon name="i-simple-icons-github" class="w-4 h-4" />
                   </UButton>
                   <UButton
-                    v-if="project.liveUrl"
-                    :to="project.liveUrl"
+                    v-if="projectMetadata[projectId].liveUrl"
+                    :to="projectMetadata[projectId].liveUrl"
                     target="_blank"
                     color="neutral"
                     variant="ghost"
                     size="sm"
-                    :aria-label="`Voir la démo de ${project.title}`"
+                    :aria-label="`${$t('projects.actions.demo')} - ${$t(`projects.items.${projectId}.title`)}`"
                   >
                     <UIcon name="i-heroicons-arrow-top-right-on-square" class="w-4 h-4" />
                   </UButton>
@@ -154,7 +154,8 @@
 import { computed, ref } from 'vue'
 import { usePortfolioData } from '~/composables/usePortfolioData'
 
-const { projects } = usePortfolioData()
+const { projectMetadata } = usePortfolioData()
+const { tm } = useI18n()
 
 const selectedCategory = ref('all')
 
@@ -165,19 +166,24 @@ const categories = computed(() => [
   { label: $t('projects.filters.other'), value: 'other' }
 ])
 
-const filteredProjects = computed(() => {
+const projectIds = computed(() => {
+  const ids = Object.keys(projectMetadata)
   if (selectedCategory.value === 'all') {
-    return projects
+    return ids
   }
-  return projects.filter(project => project.category === selectedCategory.value)
+  return ids.filter(id => projectMetadata[id].category === selectedCategory.value)
 })
 
-const getCategoryLabel = (category: string): string => {
-  const labels = {
-    web: 'Web',
-    mobile: 'Mobile',
-    other: 'Autres'
+const getTechnologies = (projectId: string): string[] => {
+  const techs = tm(`projects.items.${projectId}.technologies`) as any
+  if (Array.isArray(techs)) {
+    return techs.map((tech: any) => {
+      if (typeof tech === 'string') return tech
+      if (tech?.loc?.source) return tech.loc.source
+      return String(tech)
+    })
   }
-  return labels[category as keyof typeof labels] || 'Autres'
+  return []
 }
+
 </script>

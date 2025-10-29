@@ -49,107 +49,44 @@ export const usePortfolioData = () => {
     { name: 'Bruno', icon: 'i-simple-icons-bruno', category: 'tools' },
   ]
 
-  const projects: Project[] = [
-    {
-      id: '1',
-      title: 'Portfolio 3D Interactif',
-      description: 'Portfolio moderne avec animations Three.js et design épuré',
-      longDescription: 'Un portfolio développé avec Nuxt 3, TypeScript et Three.js, mettant en avant des animations fluides et une expérience utilisateur immersive.',
-      image: '/images/projects/portfolio.jpg',
-      technologies: ['Nuxt.js', 'TypeScript', 'Three.js', 'Tailwind CSS', 'GSAP'],
-      githubUrl: 'https://github.com/olivierrecher/portfolio',
-      liveUrl: 'https://olivierrecher.dev',
+  // Project metadata (non-translatable data only)
+  const projectMetadata: Record<string, {
+    image: string
+    githubUrl?: string
+    liveUrl?: string
+    featured: boolean
+    category: 'web' | 'mobile' | 'other'
+    year: number
+  }> = {
+    '1': {
+      image: '/images/projects/doodle-jump.jpeg',
+      githubUrl: 'https://github.com/OlivierRecher/doodleGoofy',
+      liveUrl: '',
       featured: true,
       category: 'web',
       year: 2024
     },
-    {
-      id: '2',
-      title: 'E-commerce Vue.js',
-      description: 'Plateforme e-commerce complète avec panier et paiement',
-      longDescription: 'Application e-commerce développée avec Vue.js, incluant gestion des produits, panier, système de paiement et dashboard administrateur.',
-      image: '/images/projects/ecommerce.jpg',
-      technologies: ['Vue.js', 'Node.js', 'PostgreSQL', 'Stripe', 'Tailwind CSS'],
-      githubUrl: 'https://github.com/olivierrecher/ecommerce',
-      liveUrl: 'https://ecommerce-demo.vercel.app',
+    '2': {
+      image: '/images/projects/prevention.png',
+      githubUrl: 'https://github.com/olivierrecher/alcoolytics',
+      liveUrl: 'https://alcoolytics.com',
       featured: true,
       category: 'web',
-      year: 2023
+      year: 2025
     },
-    {
-      id: '3',
-      title: 'Dashboard Analytics',
-      description: 'Tableau de bord avec visualisations de données en temps réel',
-      longDescription: 'Dashboard interactif pour l\'analyse de données avec graphiques dynamiques, filtres avancés et export de rapports.',
-      image: '/images/projects/dashboard.jpg',
-      technologies: ['React', 'TypeScript', 'D3.js', 'Node.js', 'MongoDB'],
-      githubUrl: 'https://github.com/olivierrecher/dashboard',
-      liveUrl: 'https://dashboard-demo.vercel.app',
+    '3': {
+      image: '/images/projects/pomodoro.png',
+      githubUrl: 'https://github.com/PomoFocus/Flutter-Front',
+      liveUrl: '',
       featured: false,
-      category: 'web',
+      category: 'mobile',
       year: 2023
     }
-  ]
-
-  const experiences: Experience[] = [
-    {
-      id: '1',
-      company: 'TechCorp',
-      position: 'Développeur Full-Stack Senior',
-      startDate: '2022-01',
-      current: true,
-      description: [
-        'Développement d\'applications web modernes avec Vue.js et Node.js',
-        'Architecture et optimisation de bases de données PostgreSQL',
-        'Mentorat d\'une équipe de 3 développeurs juniors',
-        'Mise en place de pipelines CI/CD avec Docker et AWS'
-      ],
-      technologies: ['Vue.js', 'Node.js', 'PostgreSQL', 'Docker', 'AWS'],
-      location: 'Paris, France'
-    },
-    {
-      id: '2',
-      company: 'StartupXYZ',
-      position: 'Développeur Frontend',
-      startDate: '2020-06',
-      endDate: '2021-12',
-      current: false,
-      description: [
-        'Développement d\'interfaces utilisateur avec React et TypeScript',
-        'Intégration d\'APIs REST et GraphQL',
-        'Optimisation des performances et SEO',
-        'Collaboration avec l\'équipe design pour l\'UX'
-      ],
-      technologies: ['React', 'TypeScript', 'GraphQL', 'Tailwind CSS'],
-      location: 'Lyon, France'
-    }
-  ]
-
-  const education: Education[] = [
-    {
-      id: '1',
-      institution: 'École Supérieure d\'Informatique',
-      degree: 'Master',
-      field: 'Informatique et Technologies Web',
-      startDate: '2018',
-      endDate: '2020',
-      description: 'Spécialisation en développement web et technologies émergentes'
-    },
-    {
-      id: '2',
-      institution: 'Université de Technologie',
-      degree: 'Licence',
-      field: 'Informatique',
-      startDate: '2015',
-      endDate: '2018'
-    }
-  ]
+  }
 
   return {
     personalInfo,
     skills,
-    projects,
-    experiences,
-    education
+    projectMetadata,
   }
 }

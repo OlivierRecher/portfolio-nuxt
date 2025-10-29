@@ -69,20 +69,23 @@
     },
     "featured": "Projet phare",
     "items": {
-      "portfolio": {
-        "title": "Portfolio 3D Interactif",
-        "description": "Portfolio moderne avec animations Three.js et design épuré",
-        "longDescription": "Un portfolio développé avec Nuxt 3, TypeScript et Three.js, mettant en avant des animations fluides et une expérience utilisateur immersive."
+      "1": {
+        "title": "Doodle Jump - Autopilot AI",
+        "description": "Doodle Jump à partir de zéro, création d'un modèle AI pour la navigation automatique.",
+        "longDescription": "Doodle Jump à partir de zéro, création d'un modèle AI pour la navigation automatique.",
+        "technologies": ["TypeScript", "Algo génétiques", "Modèle MVC", "Tailwind CSS"]
       },
-      "ecommerce": {
-        "title": "E-commerce Vue.js",
-        "description": "Plateforme e-commerce complète avec panier et paiement",
-        "longDescription": "Application e-commerce développée avec Vue.js, incluant gestion des produits, panier, système de paiement et dashboard administrateur."
+      "2": {
+        "title": "Application PWA - Prévention",
+        "description": "Prévention de la consommation d'alcool. Simulation du taux d'alcoolémie. Eviter la conduite en état d'ivresse.",
+        "longDescription": "Application PWA pour la prévention de consommation d'alcool, avec simulation du taux d'alcoolémie.",
+        "technologies": ["Nuxt.js", "Vue.js", "Tailwind CSS", "LocalStorage"]
       },
-      "dashboard": {
-        "title": "Dashboard Analytics",
-        "description": "Tableau de bord avec visualisations de données en temps réel",
-        "longDescription": "Dashboard interactif pour l'analyse de données avec graphiques dynamiques, filtres avancés et export de rapports."
+      "3": {
+        "title": "Application mobile - Pomodoro",
+        "description": "Application mobile pour la gestion de la productivité, d'un planning et de la musique.",
+        "longDescription": "Application mobile pour la gestion de la productivité, d'un planning et de la musique.",
+        "technologies": ["Flutter", "Dart"]
       }
     }
   },
