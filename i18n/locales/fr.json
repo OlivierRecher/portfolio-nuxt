@@ -187,12 +187,55 @@
     "contact": "Contact",
     "copyright": "Tous droits réservés.",
     "backToTop": "Retour en haut",
+    "legalMentions": "Mentions légales",
     "links": {
       "about": "À Propos",
       "skills": "Compétences",
       "projects": "Projets",
       "experience": "Expérience",
       "contact": "Contact"
+    }
+  },
+  "legal": {
+    "title": "Mentions légales",
+    "sections": {
+      "editor": {
+        "title": "Éditeur du site",
+        "name": "Olivier Recher",
+        "address": "572 chemin du Viget, 30100 Alès, France",
+        "phone": "+33 6 19 01 36 44",
+      },
+      "hosting": {
+        "title": "Hébergement",
+        "provider": "Vercel Inc.",
+        "address": "340 S Lemon Ave #4133, Walnut, CA 91789, États-Unis",
+        "website": "https://vercel.com"
+      },
+      "director": {
+        "title": "Directeur de publication",
+        "name": "Olivier Recher"
+      },
+      "dataProtection": {
+        "title": "Protection des données personnelles",
+        "description": "Aucune donnée personnelle n'est collectée sur ce site. Ce site est un portfolio personnel qui ne collecte, ne stocke ni ne traite aucune donnée personnelle des visiteurs.",
+        "rights": "Conformément au Règlement Général sur la Protection des Données (RGPD), vous disposez d'un droit d'accès, de rectification, de suppression, de limitation, d'opposition et de portabilité sur vos données personnelles. Pour toute demande concernant vos données personnelles, vous pouvez nous contacter à l'adresse e-mail indiquée dans les mentions légales."
+      },
+      "cookies": {
+        "title": "Cookies",
+        "description": "Ce site n'utilise pas de cookies. Aucun cookie de tracking, d'analyse ou de préférences n'est déposé sur votre terminal lors de votre visite."
+      },
+      "intellectualProperty": {
+        "title": "Propriété intellectuelle",
+        "description": "L'ensemble des éléments contenus sur ce site (textes, images, logos, code source) est la propriété exclusive d'Olivier Recher et est protégé par les lois relatives à la propriété intellectuelle. Toute reproduction, représentation, modification, publication, adaptation de tout ou partie des éléments du site, quel que soit le moyen ou le procédé utilisé, est interdite sans autorisation écrite préalable d'Olivier Recher."
+      },
+      "liability": {
+        "title": "Limitation de responsabilité",
+        "description": "L'éditeur du site s'efforce de fournir sur le site des informations aussi précises que possible. Toutefois, il ne pourra être tenu responsable des omissions, des inexactitudes et des carences dans la mise à jour, qu'elles soient de son fait ou du fait des tiers partenaires qui lui fournissent ces informations. Tous les informations indiquées sur le site sont données à titre indicatif, et sont susceptibles d'évoluer. Par ailleurs, les renseignements figurant sur le site ne sont pas exhaustifs."
+      },
+      "externalLinks": {
+        "title": "Liens externes",
+        "description": "Ce site peut contenir des liens vers d'autres sites web. L'éditeur du site n'est pas responsable du contenu, des pratiques de confidentialité ou des politiques des sites externes vers lesquels des liens sont proposés. La présence de liens vers d'autres sites ne constitue pas une approbation ou une recommandation de ces sites ou de leur contenu."
+      }
     }
   },
   "common": {
@@ -203,6 +246,7 @@
     "open": "Ouvrir",
     "view": "Voir",
     "download": "Télécharger",
-    "learnMore": "En savoir plus"
+    "learnMore": "En savoir plus",
+    "backToHome": "Retour à l'accueil"
   }
 }

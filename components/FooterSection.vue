@@ -10,7 +10,7 @@
               {{ personalInfo.name }}
             </h3>
             <p class="text-gray-300 dark:text-gray-300 mb-6 max-w-md">
-              //TODO: rewrite this
+              {{ $t('contact.info.description') }}
             </p>
             
             <!-- Social Links -->
@@ -105,8 +105,16 @@
         <!-- Bottom Bar -->
         <div class="border-t border-gray-800 dark:border-gray-800 pt-8">
           <div class="flex flex-col md:flex-row justify-between items-center">
-            <div class="text-gray-400 dark:text-gray-400 text-sm mb-4 md:mb-0">
-              © {{ currentYear }} {{ personalInfo.name }}. {{ $t('footer.copyright') }}
+            <div class="flex flex-col md:flex-row items-center space-y-2 md:space-y-0 md:space-x-4 mb-4 md:mb-0">
+              <div class="text-gray-400 dark:text-gray-400 text-sm">
+                © {{ currentYear }} {{ personalInfo.name }}. {{ $t('footer.copyright') }}
+              </div>
+              <NuxtLink
+                to="/mentions-legales"
+                class="text-gray-400 dark:text-gray-400 hover:text-white dark:hover:text-white text-sm transition-colors duration-300 underline"
+              >
+                {{ $t('footer.legalMentions') }}
+              </NuxtLink>
             </div>
             
             <!-- Back to Top Button -->

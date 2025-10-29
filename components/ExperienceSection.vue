@@ -216,14 +216,12 @@
 </template>
 
 <script setup lang="ts">
-import { usePortfolioData } from '~/composables/usePortfolioData';
-
-const { education } = usePortfolioData();
-
+const { locale } = useI18n();
 
 const formatDate = (dateString: string): string => {
-  const date = new Date(dateString)
-  return date.toLocaleDateString('fr-FR', { 
+  const date = new Date(dateString + '-01') // Ajouter le jour pour créer une date valide
+  const localeCode = locale.value === 'fr' ? 'fr-FR' : 'en-US'
+  return date.toLocaleDateString(localeCode, { 
     year: 'numeric', 
     month: 'long' 
   })

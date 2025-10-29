@@ -187,12 +187,55 @@
     "contact": "Contact",
     "copyright": "All rights reserved.",
     "backToTop": "Back to top",
+    "legalMentions": "Legal notices",
     "links": {
       "about": "About",
       "skills": "Skills",
       "projects": "Projects",
       "experience": "Experience",
       "contact": "Contact"
+    }
+  },
+  "legal": {
+    "title": "Legal notices",
+    "sections": {
+      "editor": {
+        "title": "Site editor",
+        "name": "Olivier Recher",
+        "address": "572 chemin du Viget, 30100 Alès, France",
+        "phone": "+33 6 19 01 36 44"
+      },
+      "hosting": {
+        "title": "Hosting",
+        "provider": "Vercel Inc.",
+        "address": "340 S Lemon Ave #4133, Walnut, CA 91789, United States",
+        "website": "https://vercel.com"
+      },
+      "director": {
+        "title": "Publication director",
+        "name": "Olivier Recher"
+      },
+      "dataProtection": {
+        "title": "Personal data protection",
+        "description": "No personal data is collected on this website. This is a personal portfolio website that does not collect, store or process any personal data from visitors.",
+        "rights": "In accordance with the General Data Protection Regulation (GDPR), you have the right to access, rectification, deletion, limitation, opposition and portability of your personal data. For any request regarding your personal data, you can contact us at the e-mail address indicated in the legal notices."
+      },
+      "cookies": {
+        "title": "Cookies",
+        "description": "This website does not use cookies. No tracking, analytics or preference cookies are placed on your device during your visit."
+      },
+      "intellectualProperty": {
+        "title": "Intellectual property",
+        "description": "All elements contained on this website (texts, images, logos, source code) are the exclusive property of Olivier Recher and are protected by intellectual property laws. Any reproduction, representation, modification, publication, adaptation of all or part of the site's elements, regardless of the means or process used, is prohibited without prior written authorization from Olivier Recher."
+      },
+      "liability": {
+        "title": "Limitation of liability",
+        "description": "The site editor strives to provide information on the site as accurate as possible. However, it cannot be held responsible for omissions, inaccuracies and deficiencies in the update, whether they are its fault or that of third-party partners who provide this information. All information indicated on the site is given for information purposes only, and is likely to evolve. Furthermore, the information appearing on the site is not exhaustive."
+      },
+      "externalLinks": {
+        "title": "External links",
+        "description": "This website may contain links to other websites. The site editor is not responsible for the content, privacy practices or policies of external sites to which links are provided. The presence of links to other sites does not constitute approval or recommendation of these sites or their content."
+      }
     }
   },
   "common": {
@@ -203,6 +246,7 @@
     "open": "Open",
     "view": "View",
     "download": "Download",
-    "learnMore": "Learn more"
+    "learnMore": "Learn more",
+    "backToHome": "Back to home"
   }
 }
