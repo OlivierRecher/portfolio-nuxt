@@ -6,7 +6,11 @@
     <div class="container mx-auto px-4">
       <div class="flex items-center justify-between h-16">
         <!-- Logo -->
-        <div class="flex items-center space-x-2">
+        <NuxtLink 
+          to="/" 
+          class="flex items-center space-x-2 cursor-pointer hover:opacity-80 transition-opacity duration-300"
+          @click="handleLogoClick"
+        >
           <div class="size-16 flex items-center justify-center">
             <img 
               src="/images/logo_light.png" 
@@ -22,7 +26,7 @@
           <span class="text-xl font-bold text-gray-900 dark:text-white">
             {{ personalInfo.name.split(' ')[0] }}
           </span>
-        </div>
+        </NuxtLink>
 
         <!-- Desktop Navigation -->
         <div class="hidden md:flex items-center space-x-8">
@@ -102,6 +106,7 @@ import { usePortfolioData } from '~/composables/usePortfolioData'
 import { scrollToSection } from '~/utils/scroll'
 
 const { personalInfo } = usePortfolioData()
+const route = useRoute()
 
 const isScrolled = ref(false)
 const isMobileMenuOpen = ref(false)
@@ -120,6 +125,16 @@ const isDark = computed(() => colorMode.value === 'dark')
 
 const toggleTheme = () => {
   colorMode.preference = colorMode.value === 'dark' ? 'light' : 'dark'
+}
+
+const handleLogoClick = (e: Event) => {
+  // Si on est déjà sur la page d'accueil, faire défiler vers le haut
+  // Sinon, NuxtLink gérera la navigation vers "/"
+  if (route.path === '/') {
+    e.preventDefault()
+    window.scrollTo({ top: 0, behavior: 'smooth' })
+    scrollToSection('hero')
+  }
 }
 
 const loading = ref(true)
