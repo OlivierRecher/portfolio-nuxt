@@ -162,7 +162,6 @@ const categories = computed(() => [
   { label: $t('projects.filters.all'), value: 'all' },
   { label: $t('projects.filters.web'), value: 'web' },
   { label: $t('projects.filters.mobile'), value: 'mobile' },
-  { label: $t('projects.filters.desktop'), value: 'desktop' },
   { label: $t('projects.filters.other'), value: 'other' }
 ])
 
@@ -177,7 +176,6 @@ const getCategoryLabel = (category: string): string => {
   const labels = {
     web: 'Web',
     mobile: 'Mobile',
-    desktop: 'Desktop',
     other: 'Autres'
   }
   return labels[category as keyof typeof labels] || 'Autres'

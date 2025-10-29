@@ -8,7 +8,7 @@ export interface Project {
   githubUrl?: string
   liveUrl?: string
   featured: boolean
-  category: 'web' | 'mobile' | 'desktop' | 'other'
+  category: 'web' | 'mobile' | 'other'
   year: number
 }
 

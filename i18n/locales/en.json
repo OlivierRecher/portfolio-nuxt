@@ -60,7 +60,6 @@
       "all": "All",
       "web": "Web",
       "mobile": "Mobile",
-      "desktop": "Desktop",
       "other": "Others"
     },
     "actions": {
