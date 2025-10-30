@@ -72,21 +72,16 @@
       "1": {
         "title": "Doodle Jump - Autopilot AI",
         "description": "Doodle Jump à partir de zéro, création d'un modèle AI pour la navigation automatique.",
-        "longDescription": "Doodle Jump à partir de zéro, création d'un modèle AI pour la navigation automatique.",
-        "technologies": ["TypeScript", "Algo génétiques", "Modèle MVC", "Tailwind CSS"]
+        "longDescription": "Doodle Jump à partir de zéro, création d'un modèle AI pour la navigation automatique."
       },
       "2": {
         "title": "Application PWA - Prévention",
         "description": "Prévention de la consommation d'alcool. Simulation du taux d'alcoolémie. Eviter la conduite en état d'ivresse.",
-        "longDescription": "Application PWA pour la prévention de consommation d'alcool, avec simulation du taux d'alcoolémie.",
-        "technologies": ["Nuxt.js", "Vue.js", "Tailwind CSS", "LocalStorage"]
-      },
+        "longDescription": "Application PWA pour la prévention de consommation d'alcool, avec simulation du taux d'alcoolémie."      },
       "3": {
         "title": "Application mobile - Pomodoro",
         "description": "Application mobile pour la gestion de la productivité, d'un planning et de la musique.",
-        "longDescription": "Application mobile pour la gestion de la productivité, d'un planning et de la musique.",
-        "technologies": ["Flutter", "Dart"]
-      }
+        "longDescription": "Application mobile pour la gestion de la productivité, d'un planning et de la musique."      }
     }
   },
   "experience": {

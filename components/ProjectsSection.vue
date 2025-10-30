@@ -100,17 +100,17 @@
               <!-- Technologies -->
               <div class="flex flex-wrap gap-2 mb-4">
                 <span
-                  v-for="(tech, techIndex) in getTechnologies(projectId).slice(0, 3)"
+                  v-for="(tech, techIndex) in projectMetadata[projectId].technologies"
                   :key="techIndex"
                   class="px-3 py-1 bg-gray-100 dark:bg-gray-700 text-gray-700 dark:text-gray-300 rounded-full text-sm"
                 >
                   {{ tech }}
                 </span>
                 <span
-                  v-if="getTechnologies(projectId).length > 3"
+                  v-if="projectMetadata[projectId].technologies.length > 3"
                   class="px-3 py-1 bg-gray-100 dark:bg-gray-700 text-gray-700 dark:text-gray-300 rounded-full text-sm"
                 >
-                  +{{ getTechnologies(projectId).length - 3 }}
+                  +{{ projectMetadata[projectId].technologies.length - 3 }}
                 </span>
               </div>
 
@@ -173,17 +173,5 @@ const projectIds = computed(() => {
   }
   return ids.filter(id => projectMetadata[id].category === selectedCategory.value)
 })
-
-const getTechnologies = (projectId: string): string[] => {
-  const techs = tm(`projects.items.${projectId}.technologies`) as any
-  if (Array.isArray(techs)) {
-    return techs.map((tech: any) => {
-      if (typeof tech === 'string') return tech
-      if (tech?.loc?.source) return tech.loc.source
-      return String(tech)
-    })
-  }
-  return []
-}
 
 </script>
