@@ -20,8 +20,11 @@
           <!-- Experience Items -->
           <div class="space-y-12">
             <div
+              v-for="expId in experienceIds"
+              :key="expId"
               class="relative flex items-start"
             >
+
               <!-- Timeline Dot -->
               <div class="relative z-10 flex-shrink-0 w-16 h-16 bg-white dark:bg-gray-800 rounded-full flex items-center justify-center border-4 border-blue-500">
                 <UIcon name="i-heroicons-briefcase" class="w-6 h-6 text-blue-500" />
@@ -33,22 +36,22 @@
                   <div class="flex flex-col md:flex-row md:items-center md:justify-between mb-4">
                     <div>
                       <h3 class="text-xl font-bold text-gray-900 dark:text-white mb-1">
-                        {{ $t('experience.items.finvens.position') }}
+                        {{ t(`experience.items.${expId}.position`) }}
                       </h3>
                       <h4 class="text-lg font-semibold text-blue-600 dark:text-blue-400 mb-1">
-                        {{ $t('experience.items.finvens.company') }}
+                        {{ t(`experience.items.${expId}.company`) }}
                       </h4>
                       <div class="flex items-center text-sm text-gray-500 dark:text-gray-400">
                         <UIcon name="i-heroicons-map-pin" class="w-4 h-4 mr-1" />
-                        {{ $t('experience.items.finvens.location') }}
+                        {{ t(`experience.items.${expId}.location`) }}
                       </div>
                     </div>
                     <div class="mt-2 md:mt-0 text-right">
                       <div class="text-sm font-medium text-gray-900 dark:text-white">
-                        {{ formatDate($t('experience.items.finvens.startDate')) }} - 
-                        {{ $t('experience.items.finvens.current') ? $t('experience.present') : formatDate($t('experience.items.finvens.endDate')) }}
+                        {{ formatDate(t(`experience.items.${expId}.startDate`)) }} - 
+                        {{ t(`experience.items.${expId}.current`) ? $t('experience.present') : formatDate(t(`experience.items.${expId}.endDate`)) }}
                       </div>
-                      <div v-if="$t('experience.items.finvens.current')" class="inline-flex items-center px-2 py-1 bg-green-100 dark:bg-green-900/30 text-green-700 dark:text-green-300 rounded-full text-xs font-medium mt-1">
+                      <div v-if="t(`experience.items.${expId}.current`)" class="inline-flex items-center px-2 py-1 bg-green-100 dark:bg-green-900/30 text-green-700 dark:text-green-300 rounded-full text-xs font-medium mt-1">
                         <div class="w-2 h-2 bg-green-500 rounded-full mr-1"></div>
                         {{ $t('experience.current') }}
                       </div>
@@ -59,12 +62,12 @@
                   <div class="mb-4">
                     <ul class="space-y-2">
                       <li
-                        v-for="(item, itemIndex) in $tm('experience.items.finvens.description')"
-                        :key="itemIndex"
+                        v-for="(line, idx) in ['1', '2', '3']"
+                        :key="idx"
                         class="flex items-start text-gray-600 dark:text-gray-300"
                       >
                         <UIcon name="i-heroicons-check" class="w-4 h-4 text-green-500 mr-2 mt-0.5 flex-shrink-0" />
-                        {{ item.loc.source }}
+                        {{ t(`experience.items.${expId}.description[${idx}]`) }}
                       </li>
                     </ul>
                   </div>
@@ -74,76 +77,11 @@
                     <h5 class="text-sm font-semibold text-gray-900 dark:text-white mb-2">{{ $t('experience.technologies') }} :</h5>
                     <div class="flex flex-wrap gap-2">
                       <span
-                        v-for="tech in $tm('experience.items.finvens.technologies')"
-                        :key="tech"
+                        v-for="(tech, techIdx) in experiencesMetaData[expId].technologies"
+                        :key="techIdx"
                         class="px-3 py-1 bg-blue-100 dark:bg-blue-900/30 text-blue-700 dark:text-blue-300 rounded-full text-sm"
                       >
-                        {{ tech.loc.source }}
-                      </span>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-            <div
-              class="relative flex items-start"
-            >
-              <!-- Timeline Dot -->
-              <div class="relative z-10 flex-shrink-0 w-16 h-16 bg-white dark:bg-gray-800 rounded-full flex items-center justify-center border-4 border-blue-500">
-                <UIcon name="i-heroicons-briefcase" class="w-6 h-6 text-blue-500" />
-              </div>
-
-                  <!-- Header -->
-              <div class="ml-8 flex-1">
-                <div class="bg-white dark:bg-gray-700 rounded-2xl p-6 shadow-lg hover:shadow-xl transition-shadow duration-300">
-                  <div class="flex flex-col md:flex-row md:items-center md:justify-between mb-4">
-                    <div>
-                      <h3 class="text-xl font-bold text-gray-900 dark:text-white mb-1">
-                        {{ $t('experience.items.sopra-steria.position') }}
-                      </h3>
-                      <h4 class="text-lg font-semibold text-blue-600 dark:text-blue-400 mb-1">
-                        {{ $t('experience.items.sopra-steria.company') }}
-                      </h4>
-                      <div class="flex items-center text-sm text-gray-500 dark:text-gray-400">
-                        <UIcon name="i-heroicons-map-pin" class="w-4 h-4 mr-1" />
-                        {{ $t('experience.items.sopra-steria.location') }}
-                      </div>
-                    </div>
-                    <div class="mt-2 md:mt-0 text-right">
-                      <div class="text-sm font-medium text-gray-900 dark:text-white">
-                        {{ formatDate($t('experience.items.sopra-steria.startDate')) }} - {{ formatDate($t('experience.items.sopra-steria.endDate')) }}
-                      </div>
-                      <div v-if="$t('experience.items.sopra-steria.current')" class="inline-flex items-center px-2 py-1 bg-green-100 dark:bg-green-900/30 text-green-700 dark:text-green-300 rounded-full text-xs font-medium mt-1">
-                        <div class="w-2 h-2 bg-green-500 rounded-full mr-1"></div>
-                        {{ $t('experience.current') }}
-                      </div>
-                    </div>
-                  </div>
-
-                  <!-- Description -->
-                  <div class="mb-4">
-                    <ul class="space-y-2">
-                      <li
-                        v-for="(item, itemIndex) in $tm('experience.items.sopra-steria.description')"
-                        :key="itemIndex"
-                        class="flex items-start text-gray-600 dark:text-gray-300"
-                      >
-                        <UIcon name="i-heroicons-check" class="w-4 h-4 text-green-500 mr-2 mt-0.5 flex-shrink-0" />
-                        {{ item.loc.source }}
-                      </li>
-                    </ul>
-                  </div>
-
-                  <!-- Technologies -->
-                  <div>
-                    <h5 class="text-sm font-semibold text-gray-900 dark:text-white mb-2">{{ $t('experience.technologies') }} :</h5>
-                    <div class="flex flex-wrap gap-2">
-                      <span
-                        v-for="tech in $tm('experience.items.sopra-steria.technologies')"
-                        :key="tech"
-                        class="px-3 py-1 bg-blue-100 dark:bg-blue-900/30 text-blue-700 dark:text-blue-300 rounded-full text-sm"
-                      >
-                        {{ tech.loc.source }}
+                        {{ t(`experience.items.${expId}.technologies[${techIdx}]`) }}
                       </span>
                     </div>
                   </div>
@@ -216,14 +154,18 @@
 </template>
 
 <script setup lang="ts">
-const { locale } = useI18n();
+import { computed } from 'vue'
+import { useI18n } from 'vue-i18n'
+// Importe un eventuel experienceMetaData si besoin (pour images, etc.)
+const { t, tm } = useI18n()
 
-const formatDate = (dateString: string): string => {
-  const date = new Date(dateString + '-01') // Ajouter le jour pour créer une date valide
-  const localeCode = locale.value === 'fr' ? 'fr-FR' : 'en-US'
-  return date.toLocaleDateString(localeCode, { 
-    year: 'numeric', 
-    month: 'long' 
-  })
+const experienceIds = computed(() => Object.keys(tm('experience.items')))
+
+const { experiencesMetaData } = usePortfolioData()
+
+const formatDate = (dateString?: string): string => {
+  if (!dateString) return ''
+  const date = new Date(dateString + '-01')
+  return date.toLocaleDateString(undefined, { year: 'numeric', month: 'long' })
 }
 </script>

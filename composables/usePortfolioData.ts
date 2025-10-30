@@ -57,6 +57,7 @@ export const usePortfolioData = () => {
     featured: boolean
     category: 'web' | 'mobile' | 'other'
     year: number
+    technologies: string[]
   }> = {
     '1': {
       image: '/images/projects/doodle-jump.jpeg',
@@ -64,7 +65,8 @@ export const usePortfolioData = () => {
       liveUrl: '',
       featured: true,
       category: 'web',
-      year: 2024
+      year: 2024,
+      technologies: ["TypeScript", "Algo génétiques", "Modèle MVC", "Tailwind CSS"]
     },
     '2': {
       image: '/images/projects/prevention.png',
@@ -72,7 +74,8 @@ export const usePortfolioData = () => {
       liveUrl: 'https://alcoolytics.com',
       featured: true,
       category: 'web',
-      year: 2025
+      year: 2025,
+      technologies: ["Nuxt.js", "Vue.js", "Tailwind CSS", "LocalStorage"]
     },
     '3': {
       image: '/images/projects/pomodoro.png',
@@ -80,13 +83,25 @@ export const usePortfolioData = () => {
       liveUrl: '',
       featured: false,
       category: 'mobile',
-      year: 2023
+      year: 2023,
+      technologies: ["Flutter", "Dart"]
     }
+  }
+  const experiencesMetaData: Record<string, {
+    technologies: string[]
+  }> = {
+    'finvens': {
+      technologies: ["Symfony", "Vue.js", "Nuxt.js", "PHP", "TypeScript", "Docker", "AWS", "REST API", "Tailwind CSS"],
+    },
+    'sopra-steria': {
+      technologies: ["JavaScript", "PHP", "MySQL", "Tailwind CSS", "UI/UX"],
+    },
   }
 
   return {
     personalInfo,
     skills,
     projectMetadata,
+    experiencesMetaData,
   }
 }
