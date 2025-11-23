@@ -29,7 +29,7 @@ export default defineNuxtConfig({
   app: {
     head: {
       htmlAttrs: {
-        lang: 'fr'
+        lang: 'en'
       },
       link: [
         { rel: 'icon', type: 'image/x-icon', href: '/favicon.ico' },
@@ -52,7 +52,7 @@ export default defineNuxtConfig({
       { code: 'fr', name: 'Français', file: 'fr.json' },
       { code: 'en', name: 'English', file: 'en.json' }
     ],
-    defaultLocale: 'fr',
+    defaultLocale: 'en',
     langDir: 'locales/',
     strategy: 'prefix_except_default',
     detectBrowserLanguage: {
