@@ -69,15 +69,33 @@ export const usePortfolioData = () => {
       technologies: ["TypeScript", "Algo génétiques", "Modèle MVC", "Tailwind CSS"]
     },
     '2': {
+      image: '/images/projects/recruiter-hunter-ai.png',
+      githubUrl: 'https://github.com/OlivierRecher/recruiter-hunter-ai',
+      liveUrl: 'https://recruiter-hunter.olivier-recher.com/',
+      featured: true,
+      category: 'web',
+      year: 2025,
+      technologies: ["Nuxt.js", "OpenAI API", "Serper.dev API "]
+    },
+    '3': {
+      image: '/images/projects/SkyDrop.png',
+      githubUrl: 'https://github.com/orgs/SkyDropProject/repositories',
+      liveUrl: '',
+      featured: true,
+      category: 'mobile',
+      year: 2025,
+      technologies: ["React Native", "Expo", "Node.js", "MongoDB", "Express"]
+    },
+    '4': {
       image: '/images/projects/prevention.png',
       githubUrl: 'https://github.com/olivierrecher/alcoolytics',
       liveUrl: 'https://alcoolytics.com',
-      featured: true,
+      featured: false,
       category: 'web',
       year: 2025,
       technologies: ["Nuxt.js", "Vue.js", "Tailwind CSS", "LocalStorage"]
     },
-    '3': {
+    '5': {
       image: '/images/projects/pomodoro.png',
       githubUrl: 'https://github.com/PomoFocus/Flutter-Front',
       liveUrl: '',

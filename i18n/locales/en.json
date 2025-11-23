@@ -75,11 +75,21 @@
         "longDescription": "Doodle Jump from scratch, creating an AI model for automatic navigation."
       },
       "2": {
+        "title": "Recruiter Contact Finder AI",
+        "description": "Search and analysis of recruiter contact data powered by AI.",
+        "longDescription": "Web application for searching and analyzing recruiter contact data powered by AI. Web scraping, OpenAI and Serper.dev API integration. Relevance analysis of results."
+      },
+      "3": {
+        "title": "SkyDrop - Drone Delivery",
+        "description": "Mobile application for autonomous drone delivery. Backend and admin interface for order and inventory management.",
+        "longDescription": "Autonomous drone delivery application. Order and inventory management with a Backend Server and admin interface."
+      },
+      "4": {
         "title": "PWA Application - Prevention",
         "description": "Alcohol consumption prevention. Blood alcohol level simulation. Avoid driving under the influence.",
         "longDescription": "PWA application for alcohol consumption prevention, with blood alcohol level simulation."
       },
-      "3": {
+      "5": {
         "title": "Mobile Application - Pomodoro",
         "description": "Mobile application for productivity management, scheduling and music.",
         "longDescription": "Mobile application for productivity management, scheduling and music."

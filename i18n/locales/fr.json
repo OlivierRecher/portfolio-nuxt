@@ -70,18 +70,30 @@
     "featured": "Projet phare",
     "items": {
       "1": {
-        "title": "Doodle Jump - Autopilot AI",
+        "title": "Doodle Jump - Autopilote IA",
         "description": "Doodle Jump à partir de zéro, création d'un modèle AI pour la navigation automatique.",
         "longDescription": "Doodle Jump à partir de zéro, création d'un modèle AI pour la navigation automatique."
       },
       "2": {
+        "title": "IA Recherche Contacte Recruteur",
+        "description": "Recherche et analyse des données de contacte recruteur piloté par IA.",
+        "longDescription": "Application web de recherche et d'analyse des données de contacte recruteur piloté par IA. Scrapping web, intégration API OpenAI et Serper.dev. Analyse de la pertinence des résultats."
+      },
+      "3": {
+        "title": "SkyDrop - Livraison par Drone",
+        "description": "Application mobile de livraison par drone autonome. Backend et IHM administrateur pour la gestion des commandes et des stocks.",
+        "longDescription": "Application de livraison par drone autonome. Gestion des commandes, des stocks avec un Serveur Backend et un IHM administrateur."
+      },
+      "4": {
         "title": "Application PWA - Prévention",
         "description": "Prévention de la consommation d'alcool. Simulation du taux d'alcoolémie. Eviter la conduite en état d'ivresse.",
-        "longDescription": "Application PWA pour la prévention de consommation d'alcool, avec simulation du taux d'alcoolémie."      },
-      "3": {
+        "longDescription": "Application PWA pour la prévention de consommation d'alcool, avec simulation du taux d'alcoolémie."
+      },
+      "5": {
         "title": "Application mobile - Pomodoro",
         "description": "Application mobile pour la gestion de la productivité, d'un planning et de la musique.",
-        "longDescription": "Application mobile pour la gestion de la productivité, d'un planning et de la musique."      }
+        "longDescription": "Application mobile pour la gestion de la productivité, d'un planning et de la musique."
+      }
     }
   },
   "experience": {
